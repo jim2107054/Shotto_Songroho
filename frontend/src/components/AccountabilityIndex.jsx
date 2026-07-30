@@ -1,4 +1,4 @@
-﻿import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { accountabilityIndex } from '../api/client';
 
 export default function AccountabilityIndex({ t }) {
@@ -32,9 +32,9 @@ export default function AccountabilityIndex({ t }) {
   return (
     <div className="corpus-section">
       <div className="corpus-header">
-        <h1 className="corpus-title">Accountability Index</h1>
+        <h1 className="corpus-title">{t.acc_title || 'Accountability Index'}</h1>
         <p className="corpus-desc">
-          Cited documented incidents grouped only by org/unit entities already present in source-backed corpus entries.
+          {t.acc_desc || 'Cited documented incidents grouped only by org/unit entities already present in source-backed corpus entries.'}
         </p>
       </div>
 
@@ -62,7 +62,9 @@ export default function AccountabilityIndex({ t }) {
         />
       </div>
 
-      <div className="corpus-count">Showing {entries.length} entities</div>
+      <div className="corpus-count">
+        {(t.showing_entities || 'Showing {count} entities').replace('{count}', entries.length)}
+      </div>
 
       {loading ? (
         <div className="text-center" style={{ padding: '48px' }}>
@@ -71,7 +73,7 @@ export default function AccountabilityIndex({ t }) {
       ) : entries.length === 0 ? (
         <div className="empty-state">
           <div className="empty-state-icon">AI</div>
-          <div className="empty-state-text">No cited human-rights-org incidents match these filters.</div>
+          <div className="empty-state-text">{t.acc_empty || 'No cited human-rights-org incidents match these filters.'}</div>
         </div>
       ) : (
         <div className="corpus-grid">
@@ -79,7 +81,7 @@ export default function AccountabilityIndex({ t }) {
             <div key={entry.entity} className="corpus-entry accountability-entry">
               <div className="corpus-entry-header">
                 <span className="corpus-verdict-tag disputed">{entry.entity}</span>
-                <span className="corpus-location">{entry.incidents.length} incident(s)</span>
+                <span className="corpus-location">{entry.incidents.length} {t.incidents_count || 'incident(s)'}</span>
               </div>
               {entry.incidents.map((incident) => (
                 <div key={incident.id} className="accountability-incident">
@@ -90,9 +92,9 @@ export default function AccountabilityIndex({ t }) {
                   <div className="corpus-description">{incident.description}</div>
                   {incident.sources?.map((source, index) => (
                     <div key={`${incident.id}-${index}`} className="corpus-source">
-                      Source: {source.source_org || source.title}
+                      {t.source || 'Source'}: {source.source_org || source.title}
                       {source.url && (
-                        <a href={source.url} target="_blank" rel="noopener noreferrer">Open</a>
+                        <a href={source.url} target="_blank" rel="noopener noreferrer">{t.open_link || 'Open'}</a>
                       )}
                     </div>
                   ))}

@@ -22,9 +22,9 @@ export default function LoadingPipeline({ activeStep, t }) {
               <div className="step-content">
                 <h4>{step.icon} {t[step.label_key]}</h4>
                 <p>
-                  {status === 'completed' && (t.lang === 'bn' ? 'সম্পন্ন' : 'Completed')}
-                  {status === 'active' && (t.lang === 'bn' ? 'চলছে...' : 'Processing...')}
-                  {status === 'pending' && (t.lang === 'bn' ? 'অপেক্ষমাণ' : 'Waiting...')}
+                  {status === 'completed' && (t.status_completed || 'Completed')}
+                  {status === 'active' && (t.status_processing || 'Processing...')}
+                  {status === 'pending' && (t.status_waiting || 'Waiting...')}
                 </p>
               </div>
             </div>

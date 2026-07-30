@@ -83,6 +83,7 @@ export default function CorpusBrowser({ lang, t }) {
         >
           <option value="">{t.filter_all}</option>
           <option value="verified">{t.filter_verified}</option>
+          <option value="disputed">{t.filter_disputed || 'Disputed'}</option>
           <option value="false_claim">{t.filter_false}</option>
         </select>
       </div>
@@ -113,7 +114,7 @@ export default function CorpusBrowser({ lang, t }) {
                   <span className="corpus-location">📍 {entry.location}</span>
                 )}
                 <span className={`corpus-verdict-tag ${entry.verdict_label}`}>
-                  {entry.verdict_label === 'verified' ? 'Verified' : entry.verdict_label === 'disputed' ? 'Disputed' : 'False Claim'}
+                  {entry.verdict_label === 'verified' ? (t.verdict_verified || 'Verified') : entry.verdict_label === 'disputed' ? (t.verdict_disputed || 'Disputed') : (t.verdict_false_claim || 'False Claim')}
                 </span>
               </div>
               <div className="corpus-description" dir="auto">
@@ -121,10 +122,10 @@ export default function CorpusBrowser({ lang, t }) {
               </div>
               {entry.sources?.length > 0 && (
                 <div className="corpus-source">
-                  Source: {entry.sources[0].source_org || entry.sources[0].title}
+                  {t.source || 'Source'}: {entry.sources[0].source_org || entry.sources[0].title}
                   {entry.sources[0].url && (
                     <a href={entry.sources[0].url} target="_blank" rel="noopener noreferrer">
-                      Open
+                      {t.open_link || 'Open'}
                     </a>
                   )}
                 </div>

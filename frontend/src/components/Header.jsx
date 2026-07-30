@@ -34,7 +34,7 @@ export default function Header({ lang, setLang, view, setView, t }) {
             className={`nav-btn ${view === 'accountability' ? 'active' : ''}`}
             onClick={() => setView('accountability')}
           >
-            Index
+            {t.nav_accountability || 'Index'}
           </button>
 
           <button
@@ -42,14 +42,14 @@ export default function Header({ lang, setLang, view, setView, t }) {
             className={`nav-btn ${view === 'integrity' ? 'active' : ''}`}
             onClick={() => setView('integrity')}
           >
-            Integrity
+            {t.nav_integrity || 'Integrity'}
           </button>
           <button
             id="nav-testimony"
             className={`nav-btn ${view === 'testimony' ? 'active' : ''}`}
             onClick={() => setView('testimony')}
           >
-            Testimony
+            {t.nav_testimony || 'Testimony'}
           </button>
           <div className="lang-toggle">
             <button

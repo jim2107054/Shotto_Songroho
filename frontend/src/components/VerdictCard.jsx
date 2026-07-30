@@ -35,7 +35,7 @@ export default function VerdictCard({ result, onReset, t }) {
           {t.back_to_verify}
         </button>
         <button className="back-btn share-btn" onClick={handleShare} disabled={sharing}>
-          {sharing ? 'Preparing...' : 'Share PNG'}
+          {sharing ? (t.preparing || 'Preparing...') : (t.share_png || 'Share PNG')}
         </button>
       </div>
 

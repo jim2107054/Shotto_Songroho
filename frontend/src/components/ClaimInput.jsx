@@ -108,7 +108,7 @@ export default function ClaimInput({ onSubmit, loading, t, lang }) {
               <div>
                 <img src={imagePreview} alt="Uploaded preview" className="image-preview" />
                 <p className="upload-text" style={{ marginTop: '8px' }}>
-                  ✅ {lang === 'bn' ? 'ছবি আপলোড হয়েছে। পরিবর্তন করতে ক্লিক করুন।' : 'Image uploaded. Click to change.'}
+                  ✅ {t.image_uploaded || 'Image uploaded. Click to change.'}
                 </p>
               </div>
             ) : (
@@ -131,7 +131,7 @@ export default function ClaimInput({ onSubmit, loading, t, lang }) {
           {/* Optional text context with image */}
           <textarea
             className="claim-textarea"
-            placeholder={lang === 'bn' ? 'ঐচ্ছিক: ছবি সম্পর্কে অতিরিক্ত তথ্য...' : 'Optional: Additional context about the image...'}
+            placeholder={t.image_context_optional || 'Optional: Additional context about the image...'}
             value={text}
             onChange={(e) => setText(e.target.value)}
             style={{ marginTop: '12px', minHeight: '60px' }}

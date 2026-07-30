@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { verifyChain } from '../api/client';
 
-export default function IntegrityPage() {
+export default function IntegrityPage({ t = {} }) {
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -28,9 +28,9 @@ export default function IntegrityPage() {
   return (
     <div className="corpus-section integrity-page">
       <div className="corpus-header">
-        <h1 className="corpus-title">Integrity</h1>
+        <h1 className="corpus-title">{t.integrity_title || 'Integrity'}</h1>
         <p className="corpus-desc">
-          The corpus is serialized, hashed, chained, and anchored with OpenTimestamps so edits are detectable.
+          {t.integrity_desc || 'The corpus is serialized, hashed, chained, and anchored with OpenTimestamps so edits are detectable.'}
         </p>
       </div>
 
@@ -42,25 +42,25 @@ export default function IntegrityPage() {
         <>
           <div className="integrity-metrics">
             <div className="data-card navy-card">
-              <span>Chain Entries</span>
+              <span>{t.integrity_entries || 'Chain Entries'}</span>
               <strong>{status?.chain_length || 0}</strong>
             </div>
             <div className="data-card teal-card">
-              <span>Verification</span>
-              <strong>{status?.valid ? 'Valid' : 'Invalid'}</strong>
+              <span>{t.integrity_verif || 'Verification'}</span>
+              <strong>{status?.valid ? (t.integrity_valid || 'Valid') : (t.integrity_invalid || 'Invalid')}</strong>
             </div>
             <div className="data-card orange-card">
-              <span>OTS Proof</span>
-              <strong>{status?.latest_ots_proof?.status || 'missing'}</strong>
+              <span>{t.integrity_ots || 'OTS Proof'}</span>
+              <strong>{status?.latest_ots_proof?.status || (t.integrity_missing || 'missing')}</strong>
             </div>
           </div>
 
           <div className="corpus-entry integrity-card">
-            <h2>Current Chain Hash</h2>
-            <code className="hash-code">{status?.chain_hash || 'Unavailable'}</code>
+            <h2>{t.integrity_hash_title || 'Current Chain Hash'}</h2>
+            <code className="hash-code">{status?.chain_hash || (t.integrity_unavail || 'Unavailable')}</code>
             {proofPath && (
               <p className="integrity-copy">
-                Latest proof: <a href="/api/chain/proof/latest" target="_blank" rel="noopener noreferrer">{proofPath}</a>
+                {t.integrity_latest_proof || 'Latest proof'}: <a href="/api/chain/proof/latest" target="_blank" rel="noopener noreferrer">{proofPath}</a>
               </p>
             )}
             {status?.errors?.length > 0 && (
@@ -71,11 +71,11 @@ export default function IntegrityPage() {
           </div>
 
           <div className="corpus-entry integrity-card">
-            <h2>Verify It Yourself</h2>
+            <h2>{t.integrity_verify_yourself || 'Verify It Yourself'}</h2>
             <ol className="verify-steps">
-              <li>Run <code>python -c "from app.chain.service import verify_stored_chain; print(verify_stored_chain())"</code> from the backend folder.</li>
-              <li>Confirm the reported chain hash matches the value shown here.</li>
-              <li>Run <code>ots verify -f app/chain/current_chain_hash.txt app/chain/proofs/&lt;proof&gt;.ots</code> to check timestamp confirmation.</li>
+              <li>{t.integrity_step1 || 'Run this command from the backend folder:'} <code>python -c "from app.chain.service import verify_stored_chain; print(verify_stored_chain())"</code></li>
+              <li>{t.integrity_step2 || 'Confirm the reported chain hash matches the value shown here.'}</li>
+              <li>{t.integrity_step3 || 'Run this command to check timestamp confirmation:'} <code>ots verify -f app/chain/current_chain_hash.txt app/chain/proofs/&lt;proof&gt;.ots</code></li>
             </ol>
           </div>
         </>

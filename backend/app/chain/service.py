@@ -127,10 +127,20 @@ def load_anchor_manifest() -> Dict[str, Any]:
         return json.load(f)
 
 
-def proof_status(proof_path: Optional[Path] = None) -> Dict[str, Any]:
+def proof_status(proof_path: Optional[Path] = None, check_remote: bool = False) -> Dict[str, Any]:
     proof_path = proof_path or latest_proof()
     if not proof_path:
-        return {"status": "missing", "proof_path": None}
+        return {"status": "missing", "proof_path": None, "detail": "No proof file found."}
+
+    manifest = load_anchor_manifest()
+    if not check_remote:
+        manifest_status = manifest.get("status", "proof_file_present")
+        status = "pending" if manifest_status == "stamped" else manifest_status
+        return {
+            "status": status,
+            "proof_path": str(proof_path),
+            "detail": manifest.get("detail", "OpenTimestamps proof file exists; remote confirmation check not run."),
+        }
 
     status = "proof_file_present"
     detail = "OpenTimestamps proof file exists; run ots verify to check confirmation."

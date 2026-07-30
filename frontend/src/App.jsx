@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import Header from './components/Header';
 import ClaimInput from './components/ClaimInput';
 import LoadingPipeline from './components/LoadingPipeline';
@@ -21,6 +21,13 @@ export default function App() {
   const { loading, result, error, activeStep, verify, reset } = useVerify();
 
   const t = useMemo(() => translations[lang] || translations.en, [lang]);
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    document.title = lang === 'bn'
+      ? 'শত্য সংগ্রহ — জুলাই গণঅভ্যুত্থানের দাবি যাচাইকরণ'
+      : 'Shotto Songroho — Fact-Verification for July Revolution Claims';
+  }, [lang]);
 
   const handleLangChange = (newLang) => {
     setLang(newLang);
@@ -101,11 +108,11 @@ export default function App() {
           )}
 
           {view === 'integrity' && (
-            <IntegrityPage />
+            <IntegrityPage t={t} />
           )}
 
           {view === 'testimony' && (
-            <TestimonyForm lang={lang} />
+            <TestimonyForm lang={lang} t={t} />
           )}
         </div>
       </main>
@@ -118,10 +125,7 @@ export default function App() {
         fontSize: '0.8rem',
         borderTop: '1px solid var(--border-subtle)',
       }}>
-        {lang === 'bn'
-          ? 'শত্য সংগ্রহ — জুলাই গণঅভ্যুত্থানের দাবি যাচাইকরণ | জুলাই হ্যাকাথন ২০২৬'
-          : 'Shotto Songroho — Fact-Verification for July Revolution Claims | July Hackathon 2026'
-        }
+        {t.footer_text}
       </footer>
     </div>
   );
