@@ -6,7 +6,7 @@ export default function Header({ lang, setLang, view, setView, t }) {
     <header className="header">
       <div className="container header-inner">
         <div className="header-brand">
-          <div className="header-logo">🔍</div>
+          <img className="header-logo" src={logoUrl} alt="Shotto Songroho" />
           <div>
             <div className="header-title">
               {lang === 'bn' ? t.app_name_bn : t.app_name}

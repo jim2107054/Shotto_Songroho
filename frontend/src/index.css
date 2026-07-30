@@ -1160,7 +1160,7 @@ body::after {
 }
 
 .header-logo {
-  background: #092C4C;
+  background: transparent;
   border-radius: 8px;
 }
 
