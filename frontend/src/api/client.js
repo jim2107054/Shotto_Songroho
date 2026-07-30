@@ -56,3 +56,19 @@ export async function healthCheck() {
   const response = await fetch(`${API_BASE}/health`);
   return response.json();
 }
+
+/**
+ * Fetch the accountability index.
+ */
+export async function accountabilityIndex({ dateFrom, dateTo, location } = {}) {
+  const params = new URLSearchParams();
+  if (dateFrom) params.set('date_from', dateFrom);
+  if (dateTo) params.set('date_to', dateTo);
+  if (location) params.set('location', location);
+
+  const response = await fetch(`${API_BASE}/accountability-index?${params.toString()}`);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+  return response.json();
+}

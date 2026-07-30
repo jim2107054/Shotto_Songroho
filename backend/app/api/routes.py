@@ -17,6 +17,9 @@ from app.schemas.models import (
     SourceCitation,
     ChainVerifyResponse,
     ChainProofStatus,
+    AccountabilityIncident,
+    AccountabilityIndexEntry,
+    AccountabilityIndexResponse,
 )
 from app.agents.pipeline import run_verification_pipeline
 from app.services.vector_store import get_all_corpus_entries, get_corpus_count
@@ -25,6 +28,8 @@ from app.chain.service import verify_stored_chain
 logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api")
+
+HUMAN_RIGHTS_ORGS = ("amnesty", "odhikar", "ain o salish", "ask", "human rights")
 
 
 @router.post("/verify", response_model=VerifyResponse)
@@ -114,6 +119,54 @@ async def search_corpus(
             status_code=500,
             detail=f"Corpus search failed: {str(e)}",
         )
+
+
+@router.get("/accountability-index", response_model=AccountabilityIndexResponse)
+async def accountability_index(
+    date_from: Optional[str] = Query(None, description="Start date (YYYY-MM-DD)"),
+    date_to: Optional[str] = Query(None, description="End date (YYYY-MM-DD)"),
+    location: Optional[str] = Query(None, description="Location filter"),
+):
+    """Aggregate documented incidents by existing org/unit-level corpus entities."""
+    entries = get_all_corpus_entries(
+        date_from=date_from,
+        date_to=date_to,
+        location=location,
+        limit=200,
+    )
+    grouped = {}
+    for entry in entries:
+        sources = entry.get("sources", [])
+        source_blob = " ".join(str(source.get("org", "")) for source in sources if isinstance(source, dict)).lower()
+        if not any(org in source_blob for org in HUMAN_RIGHTS_ORGS):
+            continue
+
+        citations = [
+            SourceCitation(
+                title=source.get("org") or source.get("url") or "Source",
+                url=source.get("url"),
+                excerpt=source.get("excerpt", ""),
+                source_org=source.get("org"),
+            )
+            for source in sources
+            if isinstance(source, dict)
+        ]
+        for entity in entry.get("entities", []):
+            if not entity or not isinstance(entity, str):
+                continue
+            grouped.setdefault(entity, []).append(AccountabilityIncident(
+                id=entry.get("id", ""),
+                date=entry.get("event_date"),
+                location=entry.get("location"),
+                description=entry.get("description_en", ""),
+                sources=citations,
+            ))
+
+    results = [
+        AccountabilityIndexEntry(entity=entity, incidents=incidents)
+        for entity, incidents in sorted(grouped.items())
+    ]
+    return AccountabilityIndexResponse(results=results, total_entities=len(results))
 
 
 @router.get("/chain/verify", response_model=ChainVerifyResponse)

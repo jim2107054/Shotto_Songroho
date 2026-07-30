@@ -142,6 +142,28 @@ class CorpusEntryResponse(BaseModel):
     entities: List[str] = Field(default_factory=list)
     related_image_hashes: List[str] = Field(default_factory=list)
 
+
+class AccountabilityIncident(BaseModel):
+    """A cited incident included in the accountability index."""
+    id: str
+    date: Optional[str] = None
+    location: Optional[str] = None
+    description: str = ""
+    sources: List[SourceCitation] = Field(default_factory=list)
+
+
+class AccountabilityIndexEntry(BaseModel):
+    """Incidents grouped by documented org/unit entity."""
+    entity: str
+    incidents: List[AccountabilityIncident] = Field(default_factory=list)
+
+
+class AccountabilityIndexResponse(BaseModel):
+    """Response body for /api/accountability-index."""
+    results: List[AccountabilityIndexEntry] = Field(default_factory=list)
+    total_entities: int = 0
+
+
 class CorpusSearchResponse(BaseModel):
     """Response body for the /api/corpus endpoint."""
     results: List[CorpusEntryResponse] = Field(default_factory=list)

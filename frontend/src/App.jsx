@@ -4,6 +4,7 @@ import ClaimInput from './components/ClaimInput';
 import LoadingPipeline from './components/LoadingPipeline';
 import VerdictCard from './components/VerdictCard';
 import CorpusBrowser from './components/CorpusBrowser';
+import AccountabilityIndex from './components/AccountabilityIndex';
 import { useVerify } from './hooks/useVerify';
 import enStrings from './i18n/en.json';
 import bnStrings from './i18n/bn.json';
@@ -91,6 +92,10 @@ export default function App() {
 
           {view === 'corpus' && (
             <CorpusBrowser lang={lang} t={t} />
+          )}
+
+          {view === 'accountability' && (
+            <AccountabilityIndex lang={lang} t={t} />
           )}
         </div>
       </main>

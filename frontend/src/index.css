@@ -962,6 +962,12 @@ a:hover {
   gap: 4px;
 }
 
+.accountability-incident {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-subtle);
+}
+
 /* ── Utility Classes ────────────────────────────────────────── */
 .sr-only {
   position: absolute;
