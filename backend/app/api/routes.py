@@ -7,6 +7,7 @@ import logging
 from typing import Optional
 
 from fastapi import APIRouter, HTTPException, Query
+from fastapi.responses import FileResponse
 
 from app.schemas.models import (
     VerifyRequest,
@@ -23,7 +24,7 @@ from app.schemas.models import (
 )
 from app.agents.pipeline import run_verification_pipeline
 from app.services.vector_store import get_all_corpus_entries, get_corpus_count
-from app.chain.service import verify_stored_chain
+from app.chain.service import latest_proof, verify_stored_chain
 
 logger = logging.getLogger(__name__)
 
@@ -185,6 +186,15 @@ async def verify_chain():
             detail=proof.get("detail", ""),
         ),
     )
+
+
+@router.get("/chain/proof/latest")
+async def latest_chain_proof():
+    """Download the latest OpenTimestamps proof file."""
+    proof = latest_proof()
+    if not proof:
+        raise HTTPException(status_code=404, detail="No OpenTimestamps proof found.")
+    return FileResponse(path=proof, filename=proof.name, media_type="application/octet-stream")
 
 
 @router.get("/health", response_model=HealthResponse)

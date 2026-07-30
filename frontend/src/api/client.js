@@ -72,3 +72,14 @@ export async function accountabilityIndex({ dateFrom, dateTo, location } = {}) {
   }
   return response.json();
 }
+
+/**
+ * Verify the integrity chain.
+ */
+export async function verifyChain() {
+  const response = await fetch(`${API_BASE}/chain/verify`);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+  return response.json();
+}
