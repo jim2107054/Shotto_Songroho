@@ -984,6 +984,14 @@ a:hover {
 .flex-center { display: flex; align-items: center; justify-content: center; }
 
 /* Back button */
+.verdict-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
 .back-btn {
   display: inline-flex;
   align-items: center;
@@ -1002,6 +1010,15 @@ a:hover {
 .back-btn:hover {
   border-color: var(--border-medium);
   color: var(--text-primary);
+}
+.share-btn {
+  background: #092C4C;
+  border-color: #092C4C;
+  color: #FFFFFF;
+}
+.share-btn:disabled {
+  opacity: 0.7;
+  cursor: wait;
 }
 
 /* Empty state */

@@ -83,3 +83,23 @@ export async function verifyChain() {
   }
   return response.json();
 }
+
+/**
+ * Generate a shareable verdict card PNG.
+ */
+export async function generateShareCard(result) {
+  const response = await fetch(`${API_BASE}/share-card`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      verdict: result.verdict,
+      confidence: result.confidence,
+      summary: result.summary,
+      sources: result.sources || [],
+    }),
+  });
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+  return response.blob();
+}

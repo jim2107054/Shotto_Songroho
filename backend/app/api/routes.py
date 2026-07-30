@@ -6,11 +6,12 @@ FastAPI router with verify, corpus, and health endpoints.
 import logging
 from typing import Optional
 
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Response
 from fastapi.responses import FileResponse
 
 from app.schemas.models import (
     VerifyRequest,
+    ShareCardRequest,
     VerifyResponse,
     CorpusSearchResponse,
     CorpusEntryResponse,
@@ -24,6 +25,7 @@ from app.schemas.models import (
 )
 from app.agents.pipeline import run_verification_pipeline
 from app.services.vector_store import get_all_corpus_entries, get_corpus_count
+from app.services.share_card import render_verdict_card
 from app.chain.service import latest_proof, verify_stored_chain
 
 logger = logging.getLogger(__name__)
@@ -59,6 +61,18 @@ async def verify_claim(request: VerifyRequest):
             status_code=500,
             detail=f"Verification failed: {str(e)}",
         )
+
+
+@router.post("/share-card")
+async def share_card(request: ShareCardRequest):
+    """Generate a shareable verdict PNG with a QR code to the first cited source."""
+    png = render_verdict_card(
+        verdict=request.verdict,
+        confidence=request.confidence,
+        summary=request.summary,
+        sources=request.sources,
+    )
+    return Response(content=png, media_type="image/png")
 
 
 @router.get("/corpus", response_model=CorpusSearchResponse)

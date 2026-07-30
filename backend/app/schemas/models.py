@@ -17,6 +17,14 @@ class VerifyRequest(BaseModel):
     lang: Literal["bn", "en"] = Field("en", description="Output language")
 
 
+class ShareCardRequest(BaseModel):
+    """Request body for generating a shareable verdict PNG."""
+    verdict: Literal["verified", "disputed", "unverifiable", "false"]
+    confidence: float = Field(0.0, ge=0.0, le=1.0)
+    summary: str = ""
+    sources: List[dict] = Field(default_factory=list)
+
+
 class CorpusSearchParams(BaseModel):
     """Query parameters for the /api/corpus endpoint."""
     query: Optional[str] = None

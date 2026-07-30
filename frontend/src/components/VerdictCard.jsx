@@ -1,8 +1,25 @@
 import React, { useState } from 'react';
 import { VERDICT_CONFIG } from '../utils/constants';
+import { generateShareCard } from '../api/client';
 
 export default function VerdictCard({ result, onReset, t }) {
   const [showPipeline, setShowPipeline] = useState(false);
+  const [sharing, setSharing] = useState(false);
+
+  const handleShare = async () => {
+    setSharing(true);
+    try {
+      const blob = await generateShareCard(result);
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'shotto-songroho-' + result.verdict + '.png';
+      link.click();
+      URL.revokeObjectURL(url);
+    } finally {
+      setSharing(false);
+    }
+  };
 
   if (!result) return null;
 
@@ -13,9 +30,14 @@ export default function VerdictCard({ result, onReset, t }) {
 
   return (
     <div className="verdict-section">
-      <button className="back-btn" onClick={onReset} id="back-btn">
-        {t.back_to_verify}
-      </button>
+      <div className="verdict-actions">
+        <button className="back-btn" onClick={onReset} id="back-btn">
+          {t.back_to_verify}
+        </button>
+        <button className="back-btn share-btn" onClick={handleShare} disabled={sharing}>
+          {sharing ? 'Preparing...' : 'Share PNG'}
+        </button>
+      </div>
 
       <div className="verdict-card" id="verdict-card">
         {/* Verdict Header */}
