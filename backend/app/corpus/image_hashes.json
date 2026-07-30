@@ -1,0 +1,137 @@
+[
+  {
+    "id": "img-reuse-001",
+    "phash": "a1b2c3d4e5f60001",
+    "original_source": "Syrian Civil War, Aleppo 2018",
+    "original_date": "2018-03-15",
+    "original_context": "Child injured during bombing in Aleppo, Syria. Photo by Reuters photographer.",
+    "false_caption": "Child injured by police gunfire during July 2024 protests in Dhaka",
+    "fact_check_url": "https://factcheck.afp.com/"
+  },
+  {
+    "id": "img-reuse-002",
+    "phash": "b2c3d4e5f6070002",
+    "original_source": "2018 Bangladesh Quota Reform Movement",
+    "original_date": "2018-04-08",
+    "original_context": "Police beating protesters during the 2018 quota reform movement in Dhaka.",
+    "false_caption": "Police brutality during July 2024 protests",
+    "fact_check_url": "https://factcheck.afp.com/"
+  },
+  {
+    "id": "img-reuse-003",
+    "phash": "c3d4e5f607080003",
+    "original_source": "Rana Plaza Collapse, Savar 2013",
+    "original_date": "2013-04-24",
+    "original_context": "Building on fire after the Rana Plaza collapse in Savar, Bangladesh.",
+    "false_caption": "Building set on fire during July 2024 protests in Dhaka",
+    "fact_check_url": "https://www.boomlive.in/"
+  },
+  {
+    "id": "img-reuse-004",
+    "phash": "d4e5f60708090004",
+    "original_source": "Myanmar Military Coup, 2021",
+    "original_date": "2021-02-01",
+    "original_context": "Myanmar military convoy during the 2021 coup d'état.",
+    "false_caption": "Military convoy deployed in Dhaka during July 2024 protests",
+    "fact_check_url": "https://factcheck.afp.com/"
+  },
+  {
+    "id": "img-reuse-005",
+    "phash": "e5f6070809100005",
+    "original_source": "2013 Hefazat-e-Islam rally, Dhaka",
+    "original_date": "2013-05-05",
+    "original_context": "Violence during the Hefazat-e-Islam rally at Shapla Chattar, Dhaka.",
+    "false_caption": "Student shot dead at Dhaka University during July 2024 protests",
+    "fact_check_url": "https://factcheck.afp.com/"
+  },
+  {
+    "id": "img-reuse-006",
+    "phash": "f607080910110006",
+    "original_source": "Photoshopped Image",
+    "original_date": "2024-07-25",
+    "original_context": "Digitally manipulated image adding Pakistani flag to protest crowd photo.",
+    "false_caption": "Protesters carrying Pakistani flags during July 2024 movement",
+    "fact_check_url": "https://www.boomlive.in/"
+  },
+  {
+    "id": "img-reuse-007",
+    "phash": "0708091011120007",
+    "original_source": "2019 Indian Kashmir Protests",
+    "original_date": "2019-08-05",
+    "original_context": "Teargas deployment during protests in Kashmir after Article 370 revocation.",
+    "false_caption": "Teargas used in Dhaka University during July 2024",
+    "fact_check_url": "https://www.boomlive.in/"
+  },
+  {
+    "id": "img-reuse-008",
+    "phash": "0809101112130008",
+    "original_source": "2019 Hong Kong Protests",
+    "original_date": "2019-11-17",
+    "original_context": "Hong Kong police using water cannon on protesters near Polytechnic University.",
+    "false_caption": "Water cannon used against Dhaka students July 2024",
+    "fact_check_url": "https://factcheck.afp.com/"
+  },
+  {
+    "id": "img-reuse-009",
+    "phash": "0910111213140009",
+    "original_source": "Egyptian Revolution, Cairo 2011",
+    "original_date": "2011-01-28",
+    "original_context": "Protesters clashing with police at Tahrir Square, Cairo, Egypt.",
+    "false_caption": "Shahbag Square protests July 2024 Bangladesh",
+    "fact_check_url": "https://www.rumorscannerbd.com/"
+  },
+  {
+    "id": "img-reuse-010",
+    "phash": "1011121314150010",
+    "original_source": "2021 Myanmar Protests",
+    "original_date": "2021-03-27",
+    "original_context": "Myanmar security forces crackdown on protesters in Mandalay.",
+    "false_caption": "Bangladesh RAB forces attacking protesters July 2024",
+    "fact_check_url": "https://factcheck.afp.com/"
+  },
+  {
+    "id": "img-reuse-011",
+    "phash": "1112131415160011",
+    "original_source": "2018 Bangladesh Quota Movement",
+    "original_date": "2018-04-09",
+    "original_context": "Students blocking road at Farmgate during 2018 quota reform movement.",
+    "false_caption": "Students blocking roads in Dhaka July 2024",
+    "fact_check_url": "https://www.boomlive.in/"
+  },
+  {
+    "id": "img-reuse-012",
+    "phash": "1213141516170012",
+    "original_source": "Libya Civil War 2011",
+    "original_date": "2011-08-23",
+    "original_context": "Armed conflict scene from Tripoli, Libya during the 2011 civil war.",
+    "false_caption": "Armed conflict in Chittagong during July 2024 movement",
+    "fact_check_url": "https://www.rumorscannerbd.com/"
+  },
+  {
+    "id": "img-reuse-013",
+    "phash": "1314151617180013",
+    "original_source": "Sri Lanka Protests 2022",
+    "original_date": "2022-07-09",
+    "original_context": "Protesters storming the Presidential Palace in Colombo, Sri Lanka.",
+    "false_caption": "Protesters storming Ganabhaban Dhaka August 2024",
+    "fact_check_url": "https://factcheck.afp.com/"
+  },
+  {
+    "id": "img-reuse-014",
+    "phash": "1415161718190014",
+    "original_source": "2013 Shahbag Protests, Dhaka",
+    "original_date": "2013-02-05",
+    "original_context": "Mass gathering at Shahbag Square demanding war crimes tribunal verdicts.",
+    "false_caption": "Mass gathering at Shahbag July 2024 anti-government protests",
+    "fact_check_url": "https://www.boomlive.in/"
+  },
+  {
+    "id": "img-reuse-015",
+    "phash": "1516171819200015",
+    "original_source": "Iraq Protests 2019",
+    "original_date": "2019-10-01",
+    "original_context": "Iraqi security forces confronting anti-government protesters in Baghdad.",
+    "false_caption": "Bangladesh security forces confronting students July 2024",
+    "fact_check_url": "https://www.rumorscannerbd.com/"
+  }
+]
