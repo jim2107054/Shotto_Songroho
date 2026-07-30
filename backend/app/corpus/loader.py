@@ -1,13 +1,14 @@
 """
-Shotto Songroho — Corpus Loader
+Shotto Songroho - Corpus Loader
 Loads seed data and image hashes into ChromaDB on startup.
 """
 
 import json
-import os
 import logging
 from pathlib import Path
 from typing import List, Dict, Any
+
+from app.corpus.sources import enforce_verdict_label
 
 logger = logging.getLogger(__name__)
 
@@ -24,6 +25,8 @@ def load_seed_data() -> List[Dict[str, Any]]:
 
     with open(SEED_DATA_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
+
+    data = [enforce_verdict_label(entry) for entry in data]
 
     logger.info(f"Loaded {len(data)} corpus entries from seed data")
     return data
@@ -68,8 +71,7 @@ def prepare_documents_for_embedding(entries: List[Dict[str, Any]]) -> dict:
                 "event_date": entry.get("event_date", ""),
                 "location": entry.get("location", ""),
                 "verdict_label": entry.get("verdict_label", ""),
-                "source_url": entry.get("source_url", ""),
-                "source_org": entry.get("source_org", ""),
+                "sources": entry.get("sources", []),
                 "description_en": en_text,
                 "description_bn": entry.get("description_bn", ""),
             })
@@ -85,15 +87,17 @@ def prepare_documents_for_embedding(entries: List[Dict[str, Any]]) -> dict:
                 "event_date": entry.get("event_date", ""),
                 "location": entry.get("location", ""),
                 "verdict_label": entry.get("verdict_label", ""),
-                "source_url": entry.get("source_url", ""),
-                "source_org": entry.get("source_org", ""),
+                "sources": entry.get("sources", []),
                 "description_en": entry.get("description_en", ""),
                 "description_bn": bn_text,
             })
 
-    logger.info(f"Prepared {len(ids)} documents for embedding ({len(entries)} entries × 2 languages)")
+    logger.info(f"Prepared {len(ids)} documents for embedding ({len(entries)} entries x 2 languages)")
     return {
         "ids": ids,
         "documents": documents,
         "metadatas": metadatas,
     }
+
+
+

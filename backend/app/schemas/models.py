@@ -1,14 +1,13 @@
 """
-Shotto Songroho — Pydantic Schemas
+Shotto Songroho - Pydantic Schemas
 Request/response models for the API layer.
 """
 
 from pydantic import BaseModel, Field
 from typing import Optional, List, Literal
-from datetime import date
 
 
-# ─── Request Models ───────────────────────────────────────────────
+# Request Models
 
 class VerifyRequest(BaseModel):
     """Request body for the /api/verify endpoint."""
@@ -28,7 +27,7 @@ class CorpusSearchParams(BaseModel):
     limit: int = Field(50, ge=1, le=200)
 
 
-# ─── Internal Pipeline Models ────────────────────────────────────
+# Internal Pipeline Models
 
 class ExtractedClaim(BaseModel):
     """Output from the Claim Extraction Agent."""
@@ -41,17 +40,24 @@ class ExtractedClaim(BaseModel):
     language_detected: str = "en"
 
 
+class SourceCitation(BaseModel):
+    """A cited source in a verdict or corpus entry."""
+    title: str = ""
+    url: Optional[str] = None
+    excerpt: str = ""
+    relevance: Optional[float] = None
+    source_org: Optional[str] = None
+
+
 class RetrievedEvidence(BaseModel):
     """A single piece of retrieved evidence from the corpus."""
     id: str
     description: str
     event_date: Optional[str] = None
     location: Optional[str] = None
-    source_url: Optional[str] = None
-    source_org: Optional[str] = None
+    sources: List[SourceCitation] = Field(default_factory=list)
     verdict_label: Optional[str] = None
     relevance_score: float = 0.0
-
 
 class CrossVerificationResult(BaseModel):
     """Output from the Cross-Verification Agent."""
@@ -78,15 +84,7 @@ class PipelineStep(BaseModel):
     duration_ms: Optional[int] = None
 
 
-# ─── Response Models ─────────────────────────────────────────────
-
-class SourceCitation(BaseModel):
-    """A cited source in the verdict."""
-    title: str
-    url: Optional[str] = None
-    excerpt: str = ""
-    relevance: Optional[float] = None
-    source_org: Optional[str] = None
+# Response Models
 
 
 class VerifyResponse(BaseModel):
@@ -108,9 +106,9 @@ class CorpusEntryResponse(BaseModel):
     description_bn: str = ""
     description_en: str = ""
     verdict_label: str = ""
-    source_url: Optional[str] = None
-    source_org: Optional[str] = None
-
+    sources: List[SourceCitation] = Field(default_factory=list)
+    entities: List[str] = Field(default_factory=list)
+    related_image_hashes: List[str] = Field(default_factory=list)
 
 class CorpusSearchResponse(BaseModel):
     """Response body for the /api/corpus endpoint."""
@@ -123,3 +121,6 @@ class HealthResponse(BaseModel):
     status: str = "ok"
     corpus_size: int = 0
     version: str = "1.0.0"
+
+
+

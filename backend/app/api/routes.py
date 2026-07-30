@@ -14,6 +14,7 @@ from app.schemas.models import (
     CorpusSearchResponse,
     CorpusEntryResponse,
     HealthResponse,
+    SourceCitation,
 )
 from app.agents.pipeline import run_verification_pipeline
 from app.services.vector_store import get_all_corpus_entries, get_corpus_count
@@ -83,8 +84,18 @@ async def search_corpus(
                 description_bn=entry.get("description_bn", ""),
                 description_en=entry.get("description_en", ""),
                 verdict_label=entry.get("verdict_label", ""),
-                source_url=entry.get("source_url"),
-                source_org=entry.get("source_org"),
+                sources=[
+                    SourceCitation(
+                        title=source.get("org") or source.get("url") or "Source",
+                        url=source.get("url"),
+                        excerpt=source.get("excerpt", ""),
+                        source_org=source.get("org"),
+                    )
+                    for source in entry.get("sources", [])
+                    if isinstance(source, dict)
+                ],
+                entities=entry.get("entities", []),
+                related_image_hashes=entry.get("related_image_hashes", []),
             ))
 
         return CorpusSearchResponse(

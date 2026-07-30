@@ -113,18 +113,18 @@ export default function CorpusBrowser({ lang, t }) {
                   <span className="corpus-location">📍 {entry.location}</span>
                 )}
                 <span className={`corpus-verdict-tag ${entry.verdict_label}`}>
-                  {entry.verdict_label === 'verified' ? (lang === 'bn' ? 'যাচাইকৃত' : 'Verified') : (lang === 'bn' ? 'মিথ্যা দাবি' : 'False Claim')}
+                  {entry.verdict_label === 'verified' ? 'Verified' : entry.verdict_label === 'disputed' ? 'Disputed' : 'False Claim'}
                 </span>
               </div>
               <div className="corpus-description" dir="auto">
                 {lang === 'bn' && entry.description_bn ? entry.description_bn : entry.description_en}
               </div>
-              {entry.source_org && (
+              {entry.sources?.length > 0 && (
                 <div className="corpus-source">
-                  📰 {entry.source_org}
-                  {entry.source_url && (
-                    <a href={entry.source_url} target="_blank" rel="noopener noreferrer">
-                      ↗
+                  Source: {entry.sources[0].source_org || entry.sources[0].title}
+                  {entry.sources[0].url && (
+                    <a href={entry.sources[0].url} target="_blank" rel="noopener noreferrer">
+                      Open
                     </a>
                   )}
                 </div>

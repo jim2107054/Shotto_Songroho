@@ -31,7 +31,8 @@ CRITICAL RULES:
 2. A verdict with zero evidence MUST be "unverifiable"
 3. If evidence contradicts the claim AND matches a known false claim, verdict is "false"
 4. If evidence partially supports with some contradictions, verdict is "disputed"
-5. Always cite specific sources — never give a black-box verdict
+5. "Verified" requires at least two independent cited source organizations; single-source support must be "disputed"
+6. Always cite specific sources — never give a black-box verdict
 
 CLAIM:
 {claim_text}
@@ -66,6 +67,21 @@ Respond with a valid JSON object (no markdown formatting):
 """
 
 
+def _independent_source_count(sources: List[SourceCitation]) -> int:
+    keys = set()
+    for source in sources:
+        key = (source.source_org or source.title or source.url or "").strip().lower()
+        if key:
+            keys.add(key)
+    return len(keys)
+
+
+def _cap_verified(verdict: str, confidence: float, sources: List[SourceCitation]) -> tuple[str, float]:
+    if verdict == "verified" and _independent_source_count(sources) < 2:
+        return "disputed", min(confidence, 0.69)
+    return verdict, confidence
+
+
 async def produce_verdict(
     claim: ExtractedClaim,
     evidence: List[RetrievedEvidence],
@@ -94,7 +110,11 @@ async def produce_verdict(
         for i, e in enumerate(evidence[:6], 1):
             evidence_text += f"\n[{i}] {e.description}"
             evidence_text += f"\n    Date: {e.event_date}, Location: {e.location}"
-            evidence_text += f"\n    Source: {e.source_org} ({e.source_url})"
+            source_text = "; ".join(
+                f"{source.source_org or source.title} ({source.url or ''})"
+                for source in e.sources
+            ) or "No source listed"
+            evidence_text += f"\n    Sources: {source_text}"
             evidence_text += f"\n    Corpus Verdict: {e.verdict_label}"
             evidence_text += f"\n    Relevance: {e.relevance_score:.2f}\n"
 
@@ -155,9 +175,9 @@ async def produce_verdict(
             for e in evidence[:3]:
                 sources.append(SourceCitation(
                     title=e.description[:100],
-                    url=e.source_url,
-                    excerpt=e.description,
-                    source_org=e.source_org,
+                    url=e.sources[0].url if e.sources else None,
+                    excerpt=e.sources[0].excerpt if e.sources and e.sources[0].excerpt else e.description,
+                    source_org=e.sources[0].source_org if e.sources else None,
                 ))
 
         verdict = data.get("verdict", "unverifiable")
@@ -167,10 +187,11 @@ async def produce_verdict(
         if verdict in ("verified", "false") and confidence < 0.3:
             verdict = "disputed"
 
-        # Safety check: if image reuse detected, cannot be "verified"
+        # Safety checks: image reuse overrides; otherwise enforce v2 multi-source rule.
         if image_check and image_check.matched and verdict == "verified":
             verdict = "false"
             confidence = max(confidence, 0.8)
+        verdict, confidence = _cap_verified(verdict, confidence, sources)
 
         result = {
             "verdict": verdict,
@@ -217,9 +238,9 @@ def _heuristic_verdict(
     for e in evidence[:3]:
         sources.append(SourceCitation(
             title=e.description[:100],
-            url=e.source_url,
-            excerpt=e.description,
-            source_org=e.source_org,
+            url=e.sources[0].url if e.sources else None,
+            excerpt=e.sources[0].excerpt if e.sources and e.sources[0].excerpt else e.description,
+            source_org=e.sources[0].source_org if e.sources else None,
         ))
 
     # Image reuse = false
@@ -240,6 +261,7 @@ def _heuristic_verdict(
     }
 
     verdict, confidence = verdict_map.get(cv.assessment, ("unverifiable", 0.3))
+    verdict, confidence = _cap_verified(verdict, confidence, sources)
 
     # Adjust confidence based on evidence relevance
     if evidence:

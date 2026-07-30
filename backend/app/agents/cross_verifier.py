@@ -80,7 +80,8 @@ async def cross_verify(
             evidence_text += f"\n[{i}] (Relevance: {e.relevance_score:.2f})\n"
             evidence_text += f"  Date: {e.event_date or 'unknown'}\n"
             evidence_text += f"  Location: {e.location or 'unknown'}\n"
-            evidence_text += f"  Source: {e.source_org or 'unknown'}\n"
+            source_orgs = ", ".join(s.source_org or s.title for s in e.sources) or "unknown"
+            evidence_text += f"  Sources: {source_orgs}\n"
             evidence_text += f"  Verdict: {e.verdict_label or 'unknown'}\n"
             evidence_text += f"  Description: {e.description}\n"
 

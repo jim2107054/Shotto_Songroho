@@ -1,5 +1,5 @@
 """
-Shotto Songroho — Vector Store Service
+Shotto Songroho - Vector Store Service
 Numpy-based vector store for corpus embedding, retrieval, and search.
 Uses sentence-transformers for multilingual embeddings and numpy cosine similarity.
 """
@@ -129,8 +129,7 @@ def search_corpus(
             "event_date": event_date,
             "location": metadata.get("location", ""),
             "verdict_label": metadata.get("verdict_label", ""),
-            "source_url": metadata.get("source_url", ""),
-            "source_org": metadata.get("source_org", ""),
+            "sources": metadata.get("sources", []),
             "relevance_score": round(relevance_score, 4),
             "lang": metadata.get("lang", "en"),
         })
@@ -160,7 +159,7 @@ def get_all_corpus_entries(
             verdict_label=verdict_label,
         )
 
-    # No query — return filtered raw entries
+    # No query - return filtered raw entries
     results = []
     for entry in _corpus_entries:
         if date_from and entry.get("event_date", "") < date_from:
@@ -187,3 +186,5 @@ def get_corpus_count() -> int:
 def get_image_hashes() -> List[Dict[str, Any]]:
     """Get all known reused image hashes."""
     return _image_hashes
+
+

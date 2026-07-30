@@ -1,12 +1,12 @@
 """
-Shotto Songroho — Agent 2: Evidence Retrieval
+Shotto Songroho - Agent 2: Evidence Retrieval
 Searches the corpus vector store for relevant evidence matching the extracted claim.
 """
 
 import logging
 from typing import List
 
-from app.schemas.models import ExtractedClaim, RetrievedEvidence
+from app.schemas.models import ExtractedClaim, RetrievedEvidence, SourceCitation
 from app.services.vector_store import search_corpus
 
 logger = logging.getLogger(__name__)
@@ -67,13 +67,23 @@ async def retrieve_evidence(claim: ExtractedClaim, top_k: int = 8) -> List[Retri
     # Convert to RetrievedEvidence models
     evidence_list = []
     for r in all_results[:top_k]:
+        citations = [
+            SourceCitation(
+                title=source.get("org") or source.get("url") or "Source",
+                url=source.get("url"),
+                excerpt=source.get("excerpt", ""),
+                source_org=source.get("org"),
+                relevance=r.get("relevance_score", 0.0),
+            )
+            for source in r.get("sources", [])
+            if isinstance(source, dict)
+        ]
         evidence_list.append(RetrievedEvidence(
             id=r["id"],
             description=r.get("description_en", r.get("description", "")),
             event_date=r.get("event_date"),
             location=r.get("location"),
-            source_url=r.get("source_url"),
-            source_org=r.get("source_org"),
+            sources=citations,
             verdict_label=r.get("verdict_label"),
             relevance_score=r.get("relevance_score", 0.0),
         ))
@@ -86,3 +96,5 @@ async def retrieve_evidence(claim: ExtractedClaim, top_k: int = 8) -> List[Retri
         logger.info(f"Top match: '{top.description[:60]}...' (score: {top.relevance_score:.4f})")
 
     return evidence_list
+
+

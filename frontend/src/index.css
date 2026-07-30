@@ -918,6 +918,11 @@ a:hover {
   color: var(--color-verified);
   border: 1px solid var(--color-verified-border);
 }
+.corpus-verdict-tag.disputed {
+  background: var(--color-disputed-bg);
+  color: var(--color-disputed);
+  border: 1px solid var(--color-disputed-border);
+}
 .corpus-verdict-tag.false_claim {
   background: var(--color-false-bg);
   color: var(--color-false);
