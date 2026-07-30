@@ -177,14 +177,11 @@ a:hover {
 }
 
 .header-logo {
-  font-size: 1.5rem;
   width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--accent-gradient);
-  border-radius: var(--radius-md);
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
   flex-shrink: 0;
 }
 

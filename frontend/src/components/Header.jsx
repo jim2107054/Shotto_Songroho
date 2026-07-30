@@ -1,4 +1,5 @@
 import React from 'react';
+import logoUrl from '../assets/logo.png';
 
 export default function Header({ lang, setLang, view, setView, t }) {
   return (
