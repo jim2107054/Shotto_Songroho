@@ -802,6 +802,24 @@ a:hover {
   font-size: 0.75rem;
 }
 
+.trace-step {
+  align-items: flex-start;
+}
+
+.trace-output {
+  margin-top: var(--space-sm);
+  padding: var(--space-sm);
+  max-height: 220px;
+  overflow: auto;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
 /* ── Corpus Browser ─────────────────────────────────────────── */
 .corpus-section {
   padding: var(--space-xl) 0;

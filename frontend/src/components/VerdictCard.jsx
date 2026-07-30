@@ -9,6 +9,7 @@ export default function VerdictCard({ result, onReset, t }) {
   const vc = VERDICT_CONFIG[result.verdict] || VERDICT_CONFIG.unverifiable;
   const verdictLabel = t[`verdict_${result.verdict}`] || result.verdict;
   const confidencePct = Math.round((result.confidence || 0) * 100);
+  const trace = result.reasoning_trace || [];
 
   return (
     <div className="verdict-section">
@@ -88,7 +89,7 @@ export default function VerdictCard({ result, onReset, t }) {
         )}
 
         {/* Pipeline Steps Detail */}
-        {result.pipeline_steps?.length > 0 && (
+        {(trace.length > 0 || result.pipeline_steps?.length > 0) && (
           <div className="pipeline-detail">
             <button
               className="pipeline-toggle"
@@ -101,7 +102,15 @@ export default function VerdictCard({ result, onReset, t }) {
 
             {showPipeline && (
               <div className="pipeline-detail-content">
-                {result.pipeline_steps.map((step, idx) => (
+                {trace.length > 0 ? trace.map((step, idx) => (
+                  <div key={idx} className="pipeline-detail-step trace-step">
+                    <span className="detail-status">{idx + 1}</span>
+                    <div>
+                      <span className="detail-agent">{step.agent}</span>
+                      <pre className="trace-output">{typeof step.output === 'string' ? step.output : JSON.stringify(step.output, null, 2)}</pre>
+                    </div>
+                  </div>
+                )) : result.pipeline_steps.map((step, idx) => (
                   <div key={idx} className="pipeline-detail-step">
                     <span className="detail-status">
                       {step.status === 'completed' ? '✅' :

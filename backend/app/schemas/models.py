@@ -4,7 +4,7 @@ Request/response models for the API layer.
 """
 
 from pydantic import BaseModel, Field
-from typing import Optional, List, Literal
+from typing import Any, Optional, List, Literal
 
 
 # Request Models
@@ -76,6 +76,12 @@ class ImageCheckResult(BaseModel):
     hash_distance: Optional[int] = None
 
 
+class ReasoningTrace(BaseModel):
+    """Intermediate output from an agent for glass-box transparency."""
+    agent: str
+    output: Any
+
+
 class PipelineStep(BaseModel):
     """A single step in the agent pipeline for transparency."""
     agent: str
@@ -119,6 +125,7 @@ class VerifyResponse(BaseModel):
     sources: List[SourceCitation] = Field(default_factory=list)
     image_match: Optional[ImageCheckResult] = None
     pipeline_steps: List[PipelineStep] = Field(default_factory=list)
+    reasoning_trace: List[ReasoningTrace] = Field(default_factory=list)
     claim_extracted: Optional[ExtractedClaim] = None
     chain_receipt: Optional[ChainReceipt] = None
 

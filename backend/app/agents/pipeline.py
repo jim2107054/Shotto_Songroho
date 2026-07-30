@@ -15,6 +15,7 @@ from app.schemas.models import (
     PipelineStep,
     SourceCitation,
     ChainReceipt,
+    ReasoningTrace,
 )
 from app.agents.claim_extractor import extract_claim
 from app.agents.evidence_retriever import retrieve_evidence
@@ -40,6 +41,7 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
     Each step is tracked for transparency. Failures degrade gracefully.
     """
     steps = []
+    reasoning_trace = []
     claim = None
     image_check_result = None
 
@@ -57,6 +59,7 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
             summary="No input provided. Please submit a text claim, image, or URL.",
             sources=[],
             pipeline_steps=[],
+            reasoning_trace=[],
         )
 
     # ─── Step 1: Claim Extraction ─────────────────────────────────
@@ -71,6 +74,7 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
             summary=f"Extracted: {claim.event[:100]}",
             duration_ms=duration,
         ))
+        reasoning_trace.append(ReasoningTrace(agent="Claim Extraction", output=claim.model_dump()))
         logger.info(f"Step 1 complete ({duration}ms): Claim extracted")
     except Exception as e:
         duration = int((time.time() - t0) * 1000)
@@ -93,6 +97,10 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
     try:
         evidence = await retrieve_evidence(claim)
         duration = int((time.time() - t0) * 1000)
+        reasoning_trace.append(ReasoningTrace(
+            agent="Evidence Retrieval",
+            output=[item.model_dump() for item in evidence],
+        ))
         steps.append(PipelineStep(
             agent="Evidence Retrieval",
             status="completed",
@@ -121,6 +129,7 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
             summary=f"Assessment: {cv_result.assessment} — {cv_result.reasoning[:100]}",
             duration_ms=duration,
         ))
+        reasoning_trace.append(ReasoningTrace(agent="Cross-Verification", output=cv_result.model_dump()))
         logger.info(f"Step 3a complete ({duration}ms): {cv_result.assessment}")
     except Exception as e:
         duration = int((time.time() - t0) * 1000)
@@ -153,6 +162,7 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
                 summary=summary,
                 duration_ms=duration,
             ))
+            reasoning_trace.append(ReasoningTrace(agent="Image Reuse Check", output=image_check_result.model_dump()))
             logger.info(f"Step 3b complete ({duration}ms): matched={image_check_result.matched}")
         except Exception as e:
             duration = int((time.time() - t0) * 1000)
@@ -168,6 +178,10 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
             agent="Image Reuse Check",
             status="skipped",
             summary="No image submitted",
+        ))
+        reasoning_trace.append(ReasoningTrace(
+            agent="Image Reuse Check",
+            output={"matched": False, "skipped": True, "reason": "No image submitted"},
         ))
 
     # ─── Step 4: Verdict ──────────────────────────────────────────
@@ -187,6 +201,12 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
             summary=f"Verdict: {verdict_data['verdict'].upper()} (confidence: {verdict_data['confidence']:.0%})",
             duration_ms=duration,
         ))
+        reasoning_trace.append(ReasoningTrace(agent="Verdict Generation", output={
+            "verdict": verdict_data.get("verdict"),
+            "confidence": verdict_data.get("confidence"),
+            "summary": verdict_data.get("summary", ""),
+            "source_count": len(verdict_data.get("sources", [])),
+        }))
         logger.info(f"Step 4 complete ({duration}ms): {verdict_data['verdict']}")
     except Exception as e:
         duration = int((time.time() - t0) * 1000)
@@ -230,6 +250,7 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
             status="completed",
             summary=f"Verdict bundle hashed into chain receipt {entry_hash[:12]}...",
         ))
+        reasoning_trace.append(ReasoningTrace(agent="Archival Notarization", output=chain_receipt.model_dump()))
     except Exception as e:
         logger.error(f"Archival receipt failed: {e}")
         steps.append(PipelineStep(
@@ -246,6 +267,7 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
         sources=verdict_data["sources"],
         image_match=image_check_result,
         pipeline_steps=steps,
+        reasoning_trace=reasoning_trace,
         claim_extracted=claim,
         chain_receipt=chain_receipt,
     )
