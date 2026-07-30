@@ -1339,3 +1339,19 @@ body::after {
   .header-nav { flex-wrap: wrap; }
   .integrity-metrics { grid-template-columns: 1fr; }
 }
+
+.form-label {
+  display: block;
+  margin: 0 0 8px;
+  color: #212B36;
+  font-size: 14px;
+  font-weight: 500;
+}
+.testimony-form {
+  display: grid;
+  gap: 12px;
+}
+.testimony-status {
+  margin-bottom: 0;
+  color: #198754;
+}

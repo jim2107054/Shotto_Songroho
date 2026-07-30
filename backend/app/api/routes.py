@@ -12,6 +12,8 @@ from fastapi.responses import FileResponse
 from app.schemas.models import (
     VerifyRequest,
     ShareCardRequest,
+    TestimonyRequest,
+    TestimonyResponse,
     VerifyResponse,
     CorpusSearchResponse,
     CorpusEntryResponse,
@@ -26,6 +28,7 @@ from app.schemas.models import (
 from app.agents.pipeline import run_verification_pipeline
 from app.services.vector_store import get_all_corpus_entries, get_corpus_count
 from app.services.share_card import render_verdict_card
+from app.testimony.queue import enqueue_testimony
 from app.chain.service import latest_proof, verify_stored_chain
 
 logger = logging.getLogger(__name__)
@@ -61,6 +64,17 @@ async def verify_claim(request: VerifyRequest):
             status_code=500,
             detail=f"Verification failed: {str(e)}",
         )
+
+
+@router.post("/testimony", response_model=TestimonyResponse)
+async def submit_testimony(request: TestimonyRequest):
+    """Store civic testimony in a moderation queue; never auto-publish."""
+    result = enqueue_testimony(
+        text=request.text,
+        contact_optional=request.contact_optional,
+        lang=request.lang,
+    )
+    return TestimonyResponse(**result)
 
 
 @router.post("/share-card")

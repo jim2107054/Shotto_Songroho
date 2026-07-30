@@ -17,6 +17,19 @@ class VerifyRequest(BaseModel):
     lang: Literal["bn", "en"] = Field("en", description="Output language")
 
 
+class TestimonyRequest(BaseModel):
+    """Request body for moderated testimony intake."""
+    text: str = Field(..., min_length=10, max_length=5000)
+    contact_optional: Optional[str] = Field(None, max_length=300)
+    lang: Literal["bn", "en"] = "en"
+
+
+class TestimonyResponse(BaseModel):
+    """Response body for testimony intake."""
+    status: Literal["queued_for_review"] = "queued_for_review"
+    id: str
+
+
 class ShareCardRequest(BaseModel):
     """Request body for generating a shareable verdict PNG."""
     verdict: Literal["verified", "disputed", "unverifiable", "false"]

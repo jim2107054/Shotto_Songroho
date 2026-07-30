@@ -103,3 +103,19 @@ export async function generateShareCard(result) {
   }
   return response.blob();
 }
+
+/**
+ * Submit testimony to the moderation queue.
+ */
+export async function submitTestimony({ text, contactOptional, lang }) {
+  const response = await fetch(`${API_BASE}/testimony`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text, contact_optional: contactOptional, lang }),
+  });
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({}));
+    throw new Error(error.detail || `HTTP ${response.status}`);
+  }
+  return response.json();
+}

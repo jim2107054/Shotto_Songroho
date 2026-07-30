@@ -44,6 +44,13 @@ export default function Header({ lang, setLang, view, setView, t }) {
           >
             Integrity
           </button>
+          <button
+            id="nav-testimony"
+            className={`nav-btn ${view === 'testimony' ? 'active' : ''}`}
+            onClick={() => setView('testimony')}
+          >
+            Testimony
+          </button>
           <div className="lang-toggle">
             <button
               id="lang-en"

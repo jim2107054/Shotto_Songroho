@@ -6,6 +6,7 @@ import VerdictCard from './components/VerdictCard';
 import CorpusBrowser from './components/CorpusBrowser';
 import AccountabilityIndex from './components/AccountabilityIndex';
 import IntegrityPage from './components/IntegrityPage';
+import TestimonyForm from './components/TestimonyForm';
 import { useVerify } from './hooks/useVerify';
 import enStrings from './i18n/en.json';
 import bnStrings from './i18n/bn.json';
@@ -101,6 +102,10 @@ export default function App() {
 
           {view === 'integrity' && (
             <IntegrityPage />
+          )}
+
+          {view === 'testimony' && (
+            <TestimonyForm lang={lang} />
           )}
         </div>
       </main>
