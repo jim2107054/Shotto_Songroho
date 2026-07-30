@@ -1,0 +1,1304 @@
+[
+  {
+    "id": "evt-001",
+    "event_date": "2024-07-01",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¬à¦¾à¦‚à¦²à¦¾à¦¦à§‡à¦¶ à¦¸à§à¦ªà§à¦°à¦¿à¦® à¦•à§‹à¦°à§à¦Ÿ à¦•à§‹à¦Ÿà¦¾ à¦ªà¦¦à§à¦§à¦¤à¦¿ à¦ªà§à¦¨à¦°à§à¦¬à¦¹à¦¾à¦² à¦•à¦°à¦¾à¦° à¦°à¦¾à¦¯à¦¼ à¦¦à§‡à¦¯à¦¼, à¦¯à¦¾ à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿à¦¤à§‡ à§«à§¬% à¦•à§‹à¦Ÿà¦¾ à¦¸à¦‚à¦°à¦•à§à¦·à¦£ à¦•à¦°à§‡à¥¤ à¦à¦‡ à¦°à¦¾à¦¯à¦¼ à¦›à¦¾à¦¤à§à¦° à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à§‡à¦° à¦¸à§‚à¦šà¦¨à¦¾ à¦•à¦°à§‡à¥¤",
+    "description_en": "Bangladesh Supreme Court reinstates the quota system, reserving 56% of government jobs through quotas. This ruling triggers the student movement.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/2024_Bangladesh_quota_reform_movement",
+        "org": "Wikipedia / Bangladesh Supreme Court Records",
+        "excerpt": "Bangladesh Supreme Court reinstates the quota system, reserving 56% of government jobs through quotas. This ruling triggers the student movement."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "8c023d18b407255695e00d6d390b7e0f002cb6818dc4915432ecb0bf0e9b5f87",
+    "prev_chain_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-002",
+    "event_date": "2024-07-15",
+    "location": "Dhaka University, Dhaka",
+    "description_bn": "à¦¢à¦¾à¦•à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à¦¯à¦¼à§‡à¦° à¦¶à¦¿à¦•à§à¦·à¦¾à¦°à§à¦¥à§€à¦°à¦¾ à¦•à§‹à¦Ÿà¦¾ à¦¸à¦‚à¦¸à§à¦•à¦¾à¦°à§‡à¦° à¦¦à¦¾à¦¬à¦¿à¦¤à§‡ à¦¬à¦¿à¦¶à¦¾à¦² à¦¸à¦®à¦¾à¦¬à§‡à¦¶ à¦•à¦°à§‡à¥¤ à¦¹à¦¾à¦œà¦¾à¦° à¦¹à¦¾à¦œà¦¾à¦° à¦¶à¦¿à¦•à§à¦·à¦¾à¦°à§à¦¥à§€ à¦•à§à¦¯à¦¾à¦®à§à¦ªà¦¾à¦¸à§‡ à¦œà¦¡à¦¼à§‹ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Dhaka University students hold massive rallies demanding quota reform. Thousands of students gather on campus.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.thedailystar.net/",
+        "org": "The Daily Star",
+        "excerpt": "Dhaka University students hold massive rallies demanding quota reform. Thousands of students gather on campus."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "d2d458ec316cf3f0d16e4c3f2c21e02344b23530bf0b0bc812f4b9c41d4d0469",
+    "prev_chain_hash": "0ee3830c0879d3bc2a72660b85ec787b03e930a0fcfc6cee3ac60dbc6a6d8ddb",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-003",
+    "event_date": "2024-07-16",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦›à¦¾à¦¤à§à¦°à¦²à§€à¦— à¦•à¦°à§à¦®à§€à¦°à¦¾ à¦•à§‹à¦Ÿà¦¾ à¦¸à¦‚à¦¸à§à¦•à¦¾à¦° à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à¦•à¦¾à¦°à§€à¦¦à§‡à¦° à¦‰à¦ªà¦° à¦¹à¦¾à¦®à¦²à¦¾ à¦šà¦¾à¦²à¦¾à¦¯à¦¼à¥¤ à¦¬à§‡à¦¶ à¦•à¦¯à¦¼à§‡à¦•à¦œà¦¨ à¦¶à¦¿à¦•à§à¦·à¦¾à¦°à§à¦¥à§€ à¦†à¦¹à¦¤ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Bangladesh Chhatra League (BCL) activists attack quota reform protesters. Several students are injured in the clashes.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.dhakatribune.com/",
+        "org": "Dhaka Tribune",
+        "excerpt": "Bangladesh Chhatra League (BCL) activists attack quota reform protesters. Several students are injured in the clashes."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "fe3b86be8f7e9911174b8f89fa857b642a49f300cf10f7ca7ce71c631dca8e3a",
+    "prev_chain_hash": "40523e78a49a346edad9e1eed5a7fac81e6c8cf097483e1e0ff3d6f2126f1376",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-004",
+    "event_date": "2024-07-17",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦ªà§à¦²à¦¿à¦¶ à¦°à¦¾à¦¬à¦¾à¦° à¦¬à§à¦²à§‡à¦Ÿ, à¦Ÿà¦¿à¦¯à¦¼à¦¾à¦° à¦—à§à¦¯à¦¾à¦¸ à¦“ à¦œà¦²à¦•à¦¾à¦®à¦¾à¦¨ à¦¬à§à¦¯à¦¬à¦¹à¦¾à¦° à¦•à¦°à§‡ à¦¬à¦¿à¦•à§à¦·à§‹à¦­à¦•à¦¾à¦°à§€à¦¦à§‡à¦° à¦›à¦¤à§à¦°à¦­à¦™à§à¦— à¦•à¦°à§‡à¥¤ à¦¬à§à¦¯à¦¾à¦ªà¦• à¦¸à¦‚à¦˜à¦°à§à¦· à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Police use rubber bullets, tear gas, and water cannons to disperse protesters. Widespread clashes occur across Dhaka.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.aljazeera.com/news/2024/7/17/bangladesh-protests",
+        "org": "Al Jazeera",
+        "excerpt": "Police use rubber bullets, tear gas, and water cannons to disperse protesters. Widespread clashes occur across Dhaka."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "29ba418701138518f41db313c75a772087a92006b3c2124059c604287c81e2da",
+    "prev_chain_hash": "f71d2c05673c258c03e11ae4eb43a05c70072f1811313ae0480ce7c1f2473e06",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-005",
+    "event_date": "2024-07-18",
+    "location": "Multiple cities, Bangladesh",
+    "description_bn": "à¦†à¦¨à§à¦¦à§‹à¦²à¦¨ à¦¸à¦¾à¦°à¦¾à¦¦à§‡à¦¶à§‡ à¦›à¦¡à¦¼à¦¿à¦¯à¦¼à§‡ à¦ªà¦¡à¦¼à§‡à¥¤ à¦šà¦Ÿà§à¦Ÿà¦—à§à¦°à¦¾à¦®, à¦°à¦¾à¦œà¦¶à¦¾à¦¹à§€, à¦–à§à¦²à¦¨à¦¾, à¦¸à¦¿à¦²à§‡à¦Ÿà¦¸à¦¹ à¦¬à¦¿à¦­à¦¿à¦¨à§à¦¨ à¦¶à¦¹à¦°à§‡ à¦¬à¦¿à¦•à§à¦·à§‹à¦­ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Protests spread nationwide. Demonstrations occur in Chittagong, Rajshahi, Khulna, Sylhet, and other major cities.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.bbc.com/news/world-asia",
+        "org": "BBC News",
+        "excerpt": "Protests spread nationwide. Demonstrations occur in Chittagong, Rajshahi, Khulna, Sylhet, and other major cities."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "f8b2b8c243e87624017eb0199335e8714ce783b426c53a89c1d448089e08329c",
+    "prev_chain_hash": "f14043fa86980a9a2e4bf79aaebf95961a7aad04b1387cf686df6aa8233c8003",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-006",
+    "event_date": "2024-07-18",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¸à¦°à¦•à¦¾à¦° à¦¸à¦¾à¦°à¦¾à¦¦à§‡à¦¶à§‡ à¦‡à¦¨à§à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¬à¦¨à§à¦§ à¦•à¦°à§‡ à¦¦à§‡à¦¯à¦¼à¥¤ à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦‡à¦¨à§à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦“ à¦¬à§à¦°à¦¡à¦¬à§à¦¯à¦¾à¦¨à§à¦¡ à¦‰à¦­à¦¯à¦¼à¦‡ à¦¬à¦¿à¦šà§à¦›à¦¿à¦¨à§à¦¨ à¦•à¦°à¦¾ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Government shuts down internet across the country. Both mobile data and broadband connections are severed.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://netblocks.org/reports/internet-disrupted-in-bangladesh-amid-quota-protests",
+        "org": "NetBlocks",
+        "excerpt": "Government shuts down internet across the country. Both mobile data and broadband connections are severed."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "e3f9d203b70aa537e4c140f7e077da29970703ead3f295c74e3bff6d2c6d26eb",
+    "prev_chain_hash": "896d1bcb67aee106b8d03d782d951951411b1bb7f48b7849a66f696c695e9ca6",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-007",
+    "event_date": "2024-07-19",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¸à¦°à¦•à¦¾à¦° à¦¸à¦¾à¦¨à§à¦§à§à¦¯ à¦†à¦‡à¦¨ à¦œà¦¾à¦°à¦¿ à¦•à¦°à§‡ à¦à¦¬à¦‚ à¦¸à§‡à¦¨à¦¾à¦¬à¦¾à¦¹à¦¿à¦¨à§€ à¦®à§‹à¦¤à¦¾à¦¯à¦¼à§‡à¦¨ à¦•à¦°à§‡à¥¤ à¦•à¦¾à¦°à¦«à¦¿à¦‰ à¦šà¦²à¦¾à¦•à¦¾à¦²à§€à¦¨ à¦—à§à¦²à¦¿à¦¬à¦°à§à¦·à¦£à§‡ à¦¬à§‡à¦¶ à¦•à¦¯à¦¼à§‡à¦•à¦œà¦¨ à¦¨à¦¿à¦¹à¦¤ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Government imposes curfew and deploys military. Several people are killed in shootings during the curfew period.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/world/asia-pacific/",
+        "org": "Reuters",
+        "excerpt": "Government imposes curfew and deploys military. Several people are killed in shootings during the curfew period."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "a692cf612b464f8b693b937ddbbd01cce81ca895d848bae66a4aa7192c9bddf7",
+    "prev_chain_hash": "092d05fa61b4c23f4ce55accec9aeff45d886f1e947c337a381eb8c315de76b1",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-008",
+    "event_date": "2024-07-19",
+    "location": "Uttara, Dhaka",
+    "description_bn": "à¦‰à¦¤à§à¦¤à¦°à¦¾à¦¯à¦¼ à¦ªà§à¦²à¦¿à¦¶à§‡à¦° à¦—à§à¦²à¦¿à¦¤à§‡ à¦¬à§‡à¦¶ à¦•à¦¯à¦¼à§‡à¦•à¦œà¦¨ à¦¬à¦¿à¦•à§à¦·à§‹à¦­à¦•à¦¾à¦°à§€ à¦¨à¦¿à¦¹à¦¤ à¦¹à¦¨à¥¤ à¦ªà§à¦°à¦¤à§à¦¯à¦•à§à¦·à¦¦à¦°à§à¦¶à§€à¦°à¦¾ à¦¸à¦°à¦¾à¦¸à¦°à¦¿ à¦—à§à¦²à¦¿à¦¬à¦°à§à¦·à¦£à§‡à¦° à¦…à¦­à¦¿à¦¯à§‹à¦— à¦•à¦°à§‡à¦¨à¥¤",
+    "description_en": "Several protesters killed by police gunfire in Uttara. Eyewitnesses report direct firing at demonstrators.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.amnesty.org/en/",
+        "org": "Amnesty International",
+        "excerpt": "Several protesters killed by police gunfire in Uttara. Eyewitnesses report direct firing at demonstrators."
+      }
+    ],
+    "entities": [
+      "Police"
+    ],
+    "related_image_hashes": [],
+    "entry_hash": "a5fcf4908178f5d1cb81707d18e2fcf689b7d0ca2f33495b106a8dbff8a04996",
+    "prev_chain_hash": "b9f0ca250d13fa35c85cf937af66a751483382810e2222ca2ec2777f92651e94",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-009",
+    "event_date": "2024-07-20",
+    "location": "Jatrabari, Dhaka",
+    "description_bn": "à¦¯à¦¾à¦¤à§à¦°à¦¾à¦¬à¦¾à¦¡à¦¼à§€à¦¤à§‡ à¦¸à¦‚à¦˜à¦°à§à¦·à§‡ à¦à¦•à¦¾à¦§à¦¿à¦• à¦¹à¦¤à¦¾à¦¹à¦¤à§‡à¦° à¦˜à¦Ÿà¦¨à¦¾ à¦˜à¦Ÿà§‡à¥¤ à¦¹à¦¾à¦¸à¦ªà¦¾à¦¤à¦¾à¦²à¦—à§à¦²à§‹ à¦†à¦¹à¦¤à¦¦à§‡à¦° à¦­à¦¿à¦¡à¦¼à§‡ à¦ªà¦°à¦¿à¦ªà§‚à¦°à§à¦£ à¦¹à¦¯à¦¼à§‡ à¦ªà¦¡à¦¼à§‡à¥¤",
+    "description_en": "Multiple casualties reported in Jatrabari clashes. Hospitals are overwhelmed with injured protesters.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.thedailystar.net/",
+        "org": "The Daily Star",
+        "excerpt": "Multiple casualties reported in Jatrabari clashes. Hospitals are overwhelmed with injured protesters."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "9b5f0c67bb491914c304cfeb3f30d0d30f9434c5dec8525cf8d7bb5d78152ff9",
+    "prev_chain_hash": "0686bc370cc2c30690039aad01fa66d744b01e47a2f24d38158302026b42bc5b",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-010",
+    "event_date": "2024-07-21",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¸à§à¦ªà§à¦°à¦¿à¦® à¦•à§‹à¦°à§à¦Ÿà§‡à¦° à¦†à¦ªà¦¿à¦² à¦¬à¦¿à¦­à¦¾à¦— à¦•à§‹à¦Ÿà¦¾ à¦¬à§à¦¯à¦¬à¦¸à§à¦¥à¦¾à¦¯à¦¼ à¦ªà¦°à¦¿à¦¬à¦°à§à¦¤à¦¨ à¦†à¦¨à¦¾à¦° à¦¨à¦¿à¦°à§à¦¦à§‡à¦¶ à¦¦à§‡à¦¯à¦¼à¥¤ à¦®à§à¦•à§à¦¤à¦¿à¦¯à§‹à¦¦à§à¦§à¦¾ à¦•à§‹à¦Ÿà¦¾ à§«% à¦ à¦¨à¦¾à¦®à¦¿à¦¯à¦¼à§‡ à¦†à¦¨à¦¾ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Supreme Court Appellate Division orders changes to quota system. Freedom fighter quota reduced to 5%.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://bdnews24.com/",
+        "org": "bdnews24.com",
+        "excerpt": "Supreme Court Appellate Division orders changes to quota system. Freedom fighter quota reduced to 5%."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "a3eac4d2e4bb26f0f14b7fce20ff4e64d2c0fd018c7bcd1d3ce8eddabb248974",
+    "prev_chain_hash": "b428abe03bb43b3cff80db52c3bc433b65feb74dd9a6ee293f7199c2856c986c",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-011",
+    "event_date": "2024-07-22",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦‡à¦¨à§à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦†à¦‚à¦¶à¦¿à¦•à¦­à¦¾à¦¬à§‡ à¦ªà§à¦¨à¦°à§à¦¦à§à¦§à¦¾à¦° à¦¹à¦¯à¦¼, à¦•à¦¿à¦¨à§à¦¤à§ à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾ à¦¬à¦¨à§à¦§ à¦¥à¦¾à¦•à§‡à¥¤ à¦¸à§‹à¦¶à§à¦¯à¦¾à¦² à¦®à¦¿à¦¡à¦¿à¦¯à¦¼à¦¾à¦¯à¦¼ à¦¸à¦‚à¦˜à¦°à§à¦·à§‡à¦° à¦›à¦¬à¦¿ à¦“ à¦­à¦¿à¦¡à¦¿à¦“ à¦›à¦¡à¦¼à¦¿à¦¯à¦¼à§‡ à¦ªà¦¡à¦¼à§‡à¥¤",
+    "description_en": "Internet partially restored but mobile data remains off. Images and videos of clashes spread on social media.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://netblocks.org/",
+        "org": "NetBlocks",
+        "excerpt": "Internet partially restored but mobile data remains off. Images and videos of clashes spread on social media."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "c483c13e10e96ad9f98f09dc96f0f90267b0b48a9ab672a33dc2770320c384d9",
+    "prev_chain_hash": "fc5b509d7d336fb00a423a5b48449be7511a83e51447183dc1d3cc7e59fa9093",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-012",
+    "event_date": "2024-07-23",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¶à¦¿à¦•à§à¦·à¦¾à¦°à§à¦¥à§€à¦°à¦¾ à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à¦•à§‡ à¦•à§‹à¦Ÿà¦¾ à¦¸à¦‚à¦¸à§à¦•à¦¾à¦° à¦¥à§‡à¦•à§‡ à¦¸à¦°à¦•à¦¾à¦°à§‡à¦° à¦ªà¦¦à¦¤à§à¦¯à¦¾à¦—à§‡à¦° à¦¦à¦¾à¦¬à¦¿à¦¤à§‡ à¦°à§‚à¦ªà¦¾à¦¨à§à¦¤à¦°à¦¿à¦¤ à¦•à¦°à§‡à¥¤",
+    "description_en": "Students transform the movement from quota reform to demands for government resignation.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.aljazeera.com/",
+        "org": "Al Jazeera",
+        "excerpt": "Students transform the movement from quota reform to demands for government resignation."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "5e70e4dcc83c6934d9e1bae13665fd55085ebdaede9db3c97e9bb8ffe2ec8570",
+    "prev_chain_hash": "f3083f92c8a61f2165deb2af6e47f2926e9b513eb761fa4dca7afe67ed7a0ea5",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-013",
+    "event_date": "2024-08-01",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦›à¦¾à¦¤à§à¦° à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à¦•à¦¾à¦°à§€à¦°à¦¾ à§ªà§® à¦˜à¦£à§à¦Ÿà¦¾à¦° à¦†à¦²à¦Ÿà¦¿à¦®à§‡à¦Ÿà¦¾à¦® à¦¦à§‡à¦¯à¦¼à¥¤ à¦¬à§à¦¯à¦¾à¦ªà¦• à¦—à¦£à¦œà¦®à¦¾à¦¯à¦¼à§‡à¦¤ à¦…à¦¨à§à¦·à§à¦ à¦¿à¦¤ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Student protesters issue a 48-hour ultimatum. Massive public gatherings are held across Dhaka.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.bbc.com/bangla",
+        "org": "BBC Bangla",
+        "excerpt": "Student protesters issue a 48-hour ultimatum. Massive public gatherings are held across Dhaka."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "f9b21ab805778dbf60d35b2f8e605de4f35ee209bbade89f95f6e6cf363e6310",
+    "prev_chain_hash": "3831ce71fa20f8e24bb31bd61789e82b3e99eb7715e01d2596ff0030c25d3fe4",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-014",
+    "event_date": "2024-08-04",
+    "location": "Multiple cities, Bangladesh",
+    "description_bn": "à¦¸à¦¾à¦°à¦¾à¦¦à§‡à¦¶à§‡ 'à¦®à¦¾à¦°à§à¦š à¦«à¦° à¦œà¦¾à¦¸à§à¦Ÿà¦¿à¦¸' à¦•à¦°à§à¦®à¦¸à§‚à¦šà¦¿ à¦˜à§‹à¦·à¦£à¦¾ à¦•à¦°à¦¾ à¦¹à¦¯à¦¼à¥¤ à¦²à¦•à§à¦·à¦¾à¦§à¦¿à¦• à¦®à¦¾à¦¨à§à¦· à¦°à¦¾à¦œà¦ªà¦¥à§‡ à¦¨à¦¾à¦®à§‡à¥¤",
+    "description_en": "Nationwide 'March for Justice' program announced. Hundreds of thousands take to the streets.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.thedailystar.net/",
+        "org": "The Daily Star",
+        "excerpt": "Nationwide 'March for Justice' program announced. Hundreds of thousands take to the streets."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "29bdd7f059cd5addb5a37b47e9b76cae89c951e1cce761644db0cf30e1e6427d",
+    "prev_chain_hash": "7fb0f4cef153fda90b7809cdbe18b50cd0691c989b857269a50cadaeecf07747",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-015",
+    "event_date": "2024-08-05",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦ªà§à¦°à¦§à¦¾à¦¨à¦®à¦¨à§à¦¤à§à¦°à§€ à¦¶à§‡à¦– à¦¹à¦¾à¦¸à¦¿à¦¨à¦¾ à¦ªà¦¦à¦¤à§à¦¯à¦¾à¦— à¦•à¦°à§‡à¦¨ à¦à¦¬à¦‚ à¦¦à§‡à¦¶ à¦›à¦¾à¦¡à¦¼à§‡à¦¨à¥¤ à¦¸à§‡à¦¨à¦¾à¦¬à¦¾à¦¹à¦¿à¦¨à§€ à¦…à¦¨à§à¦¤à¦°à§à¦¬à¦°à§à¦¤à§€ à¦¸à¦°à¦•à¦¾à¦° à¦—à¦ à¦¨à§‡à¦° à¦˜à§‹à¦·à¦£à¦¾ à¦¦à§‡à¦¯à¦¼à¥¤",
+    "description_en": "Prime Minister Sheikh Hasina resigns and leaves the country. Military announces formation of interim government.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/world/asia-pacific/bangladesh-pm-hasina-resigns-2024-08-05/",
+        "org": "Reuters",
+        "excerpt": "Prime Minister Sheikh Hasina resigns and leaves the country. Military announces formation of interim government."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "4ad205f6987b0c5bbc96eca2392f0c16edfabd2d117b26410ef351142c60557d",
+    "prev_chain_hash": "dd3dc1d6775b125a969cdf4c10be43784021c901402ff76f8f947a57ad31401a",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-016",
+    "event_date": "2024-08-05",
+    "location": "Ganabhaban, Dhaka",
+    "description_bn": "à¦¬à¦¿à¦•à§à¦·à§‹à¦­à¦•à¦¾à¦°à§€à¦°à¦¾ à¦—à¦£à¦­à¦¬à¦¨à§‡ à¦ªà§à¦°à¦¬à§‡à¦¶ à¦•à¦°à§‡à¥¤ à¦ªà§à¦°à¦§à¦¾à¦¨à¦®à¦¨à§à¦¤à§à¦°à§€à¦° à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦¬à¦¾à¦¸à¦­à¦¬à¦¨à§‡ à¦œà¦¨à¦¤à¦¾à¦° à¦¢à¦² à¦¨à¦¾à¦®à§‡à¥¤",
+    "description_en": "Protesters enter Ganabhaban, the official residence of the Prime Minister. Crowds flood the premises.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.aljazeera.com/",
+        "org": "Al Jazeera",
+        "excerpt": "Protesters enter Ganabhaban, the official residence of the Prime Minister. Crowds flood the premises."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "776f45f9ca7669fa0b904f9de1078b1deb8533ff680edbadc14a13f65a3940f1",
+    "prev_chain_hash": "42c9da4157646a28cd6be7c5e18354b3d275149ee2f40d74f0c0139c60ae4ff8",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-017",
+    "event_date": "2024-08-06",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¡. à¦®à§à¦¹à¦¾à¦®à§à¦®à¦¦ à¦‡à¦‰à¦¨à§‚à¦¸à¦•à§‡ à¦…à¦¨à§à¦¤à¦°à§à¦¬à¦°à§à¦¤à§€ à¦¸à¦°à¦•à¦¾à¦°à§‡à¦° à¦ªà§à¦°à¦§à¦¾à¦¨ à¦‰à¦ªà¦¦à§‡à¦·à§à¦Ÿà¦¾ à¦¹à¦¿à¦¸à§‡à¦¬à§‡ à¦˜à§‹à¦·à¦£à¦¾ à¦•à¦°à¦¾ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Dr. Muhammad Yunus is announced as the Chief Adviser of the interim government.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.bbc.com/news/world-asia",
+        "org": "BBC News",
+        "excerpt": "Dr. Muhammad Yunus is announced as the Chief Adviser of the interim government."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "af72c4c474ed26ccc01926fc5574e9974c06ba1c5f1eb7d571b9f3b6aa6eb8d1",
+    "prev_chain_hash": "d56a6ac5ab03d84a94cb31f234f589d5b695598af439cf6af3166bedbc104dc1",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-018",
+    "event_date": "2024-08-08",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¡. à¦®à§à¦¹à¦¾à¦®à§à¦®à¦¦ à¦‡à¦‰à¦¨à§‚à¦¸ à¦…à¦¨à§à¦¤à¦°à§à¦¬à¦°à§à¦¤à§€ à¦¸à¦°à¦•à¦¾à¦°à§‡à¦° à¦ªà§à¦°à¦§à¦¾à¦¨ à¦‰à¦ªà¦¦à§‡à¦·à§à¦Ÿà¦¾ à¦¹à¦¿à¦¸à§‡à¦¬à§‡ à¦¶à¦ªà¦¥ à¦—à§à¦°à¦¹à¦£ à¦•à¦°à§‡à¦¨à¥¤",
+    "description_en": "Dr. Muhammad Yunus is sworn in as Chief Adviser of the interim government.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/",
+        "org": "Reuters",
+        "excerpt": "Dr. Muhammad Yunus is sworn in as Chief Adviser of the interim government."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "c157ac0681383bf15482ea199c5f57e6297520e05e66a6c1ada0e75cfb783706",
+    "prev_chain_hash": "c8eff9597490283b17ff80831a5552b62060d0c39dec5abc4a9073230e826ef0",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-019",
+    "event_date": "2024-07-16",
+    "location": "Dhaka University, Dhaka",
+    "description_bn": "à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à¦¯à¦¼ à¦›à¦¾à¦¤à§à¦°à¦¾à¦¬à¦¾à¦¸à§‡ à¦›à¦¾à¦¤à§à¦°à¦²à§€à¦—à§‡à¦° à¦¹à¦¾à¦®à¦²à¦¾à¦¯à¦¼ à¦…à¦¨à§à¦¤à¦¤ à§¨à§« à¦œà¦¨ à¦¶à¦¿à¦•à§à¦·à¦¾à¦°à§à¦¥à§€ à¦†à¦¹à¦¤ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "At least 25 students injured in BCL attacks on university dormitories.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.dhakatribune.com/",
+        "org": "Dhaka Tribune",
+        "excerpt": "At least 25 students injured in BCL attacks on university dormitories."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "5ef8f3bd1dc971b891ed55309f8905a2a27eb895feb494be4a99e0cbe2ef3a76",
+    "prev_chain_hash": "149f568cf59f1bbbc3e0a8586e9b6d99e4e81963f6afef606f5dd77a2482ef56",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-020",
+    "event_date": "2024-07-18",
+    "location": "Rangpur, Bangladesh",
+    "description_bn": "à¦°à¦‚à¦ªà§à¦°à§‡ à¦ªà§à¦²à¦¿à¦¶à§‡à¦° à¦—à§à¦²à¦¿à¦¤à§‡ à¦à¦•à¦œà¦¨ à¦¬à¦¿à¦•à§à¦·à§‹à¦­à¦•à¦¾à¦°à§€ à¦¨à¦¿à¦¹à¦¤ à¦¹à¦¨à¥¤ à¦à¦Ÿà¦¿ à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à§‡à¦° à¦ªà§à¦°à¦¥à¦® à¦¦à¦¿à¦•à§‡à¦° à¦®à§ƒà¦¤à§à¦¯à§à¦—à§à¦²à§‹à¦° à¦à¦•à¦Ÿà¦¿à¥¤",
+    "description_en": "One protester killed by police gunfire in Rangpur. This is among the earliest deaths in the movement.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.thedailystar.net/",
+        "org": "The Daily Star",
+        "excerpt": "One protester killed by police gunfire in Rangpur. This is among the earliest deaths in the movement."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "767009e550a6827424bb350a66eb0252a4c0b3f6e9708f0a8e7cc84c7fbefadf",
+    "prev_chain_hash": "9ad64923d0d2af5b517483485e050f720cedf54c677459531d1ea7f0dc5abf21",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-021",
+    "event_date": "2024-07-19",
+    "location": "Mirpur, Dhaka",
+    "description_bn": "à¦®à¦¿à¦°à¦ªà§à¦°à§‡ à¦¸à¦‚à¦˜à¦°à§à¦·à§‡ à¦à¦•à¦¾à¦§à¦¿à¦• à¦¹à¦¤à¦¾à¦¹à¦¤à¥¤ à¦¸à§à¦¥à¦¾à¦¨à§€à¦¯à¦¼à¦°à¦¾ à¦°à¦¾à¦¸à§à¦¤à¦¾à¦¯à¦¼ à¦¬à§à¦¯à¦¾à¦°à¦¿à¦•à§‡à¦¡ à¦¤à§ˆà¦°à¦¿ à¦•à¦°à§‡à¥¤",
+    "description_en": "Multiple casualties in Mirpur clashes. Locals set up road barricades.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.prothomalo.com/",
+        "org": "Prothom Alo",
+        "excerpt": "Multiple casualties in Mirpur clashes. Locals set up road barricades."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "b003e9b531c9ebbdb03bc59998155780227c01f74ab5c2475d1b0512f1701a70",
+    "prev_chain_hash": "8f2c7e250021af1b301e7967248a886782d8f575e0559353ca917302c2d001ba",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-022",
+    "event_date": "2024-07-20",
+    "location": "Savar, Dhaka",
+    "description_bn": "à¦¸à¦¾à¦­à¦¾à¦°à§‡ à¦¸à¦‚à¦˜à¦°à§à¦·à§‡ à¦—à¦¾à¦°à§à¦®à§‡à¦¨à§à¦Ÿà¦¸ à¦¶à§à¦°à¦®à¦¿à¦•à¦°à¦¾à¦“ à¦¯à§‹à¦— à¦¦à§‡à¦¨à¥¤ à¦¶à§à¦°à¦®à¦¿à¦•-à¦›à¦¾à¦¤à§à¦° à¦¸à¦‚à¦¹à¦¤à¦¿ à¦—à¦¡à¦¼à§‡ à¦“à¦ à§‡à¥¤",
+    "description_en": "Garment workers join the clashes in Savar. Worker-student solidarity emerges.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.aljazeera.com/",
+        "org": "Al Jazeera",
+        "excerpt": "Garment workers join the clashes in Savar. Worker-student solidarity emerges."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "18feabf3ef684f939b7535710111a2a460721c9caad5c849f4b5c97e8163ab19",
+    "prev_chain_hash": "810d40d8654c47f8fbcdac073f1439f555705165a260ec70b5e9a062e10c45af",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-023",
+    "event_date": "2024-07-19",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦°â€Œà§à¦¯à¦¾à¦¬ à¦“ à¦ªà§à¦²à¦¿à¦¶ à¦¯à§Œà¦¥à¦­à¦¾à¦¬à§‡ à¦¬à¦¿à¦•à§à¦·à§‹à¦­ à¦¦à¦®à¦¨à§‡ à¦…à¦­à¦¿à¦¯à¦¾à¦¨ à¦šà¦¾à¦²à¦¾à¦¯à¦¼à¥¤ à¦¬à§à¦¯à¦¾à¦ªà¦• à¦—à§à¦°à§‡à¦ªà§à¦¤à¦¾à¦° à¦…à¦­à¦¿à¦¯à¦¾à¦¨ à¦¶à§à¦°à§ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "RAB and police conduct joint operations to suppress protests. Mass arrests begin.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.hrw.org/",
+        "org": "Human Rights Watch",
+        "excerpt": "RAB and police conduct joint operations to suppress protests. Mass arrests begin."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "c73b26933bdc81b39e592135720c709089e6fb73242f4319faf9db4a877b9b53",
+    "prev_chain_hash": "7484f272714fc07ae19c645a748849ee360d59b56705af591a05ff9341512c51",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-024",
+    "event_date": "2024-07-20",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¹à¦¾à¦¸à¦ªà¦¾à¦¤à¦¾à¦²à¦—à§à¦²à§‹à¦¤à§‡ à¦†à¦¹à¦¤ à¦°à§‹à¦—à§€à¦¦à§‡à¦° à¦šà¦¿à¦•à¦¿à§Žà¦¸à¦¾ à¦¦à¦¿à¦¤à§‡ à¦…à¦¸à§à¦¬à§€à¦•à¦¾à¦° à¦•à¦°à¦¾à¦° à¦…à¦­à¦¿à¦¯à§‹à¦— à¦“à¦ à§‡à¥¤",
+    "description_en": "Allegations emerge of hospitals refusing to treat injured protesters.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.amnesty.org/",
+        "org": "Amnesty International",
+        "excerpt": "Allegations emerge of hospitals refusing to treat injured protesters."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "a75451d340ea7eff67aba232964e75bb0b212db8cd149e8a1fbfd59776dc7df0",
+    "prev_chain_hash": "51892217ebdef5852b47d1b6e6dfef9084e6ccde4a0de4244bd836a582158224",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-025",
+    "event_date": "2024-07-21",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à§‡ à¦¨à¦¿à¦¹à¦¤à¦¦à§‡à¦° à¦¸à¦‚à¦–à§à¦¯à¦¾ à§§à§«à§¦ à¦œà¦¨ à¦›à¦¾à¦¡à¦¼à¦¿à¦¯à¦¼à§‡ à¦¯à¦¾à¦¯à¦¼ à¦¬à¦²à§‡ à¦œà¦¾à¦¨à¦¾ à¦¯à¦¾à¦¯à¦¼à¥¤ à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦¹à¦¿à¦¸à¦¾à¦¬ à¦…à¦¨à§‡à¦• à¦•à¦®à¥¤",
+    "description_en": "Death toll in the movement reportedly exceeds 150. Government figures are significantly lower.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.thedailystar.net/",
+        "org": "The Daily Star / Ain o Salish Kendra",
+        "excerpt": "Death toll in the movement reportedly exceeds 150. Government figures are significantly lower."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "80adace8c7caa94eb228e09796a7cdf7bfef38db27cf0716c27b4bce92d2f5af",
+    "prev_chain_hash": "10f5b48070a274010708381dada3093292b0fd85e4fefca3f7d704ac2bdec0ec",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-026",
+    "event_date": "2024-08-04",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à§ª à¦†à¦—à¦¸à§à¦Ÿ à¦°à¦¬à¦¿à¦¬à¦¾à¦° à¦¦à¦¿à¦¨à¦¬à§à¦¯à¦¾à¦ªà§€ à¦¸à¦‚à¦˜à¦°à§à¦·à§‡ à§¯à§§ à¦œà¦¨à§‡à¦° à¦¬à§‡à¦¶à¦¿ à¦¨à¦¿à¦¹à¦¤ à¦¹à¦¯à¦¼à¥¤ à¦à¦Ÿà¦¿ à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à§‡à¦° à¦¸à¦¬à¦šà§‡à¦¯à¦¼à§‡ à¦°à¦•à§à¦¤à¦•à§à¦·à¦¯à¦¼à§€ à¦¦à¦¿à¦¨à¥¤",
+    "description_en": "Over 91 people killed in daylong clashes on August 4, Sunday. This is the bloodiest day of the movement.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.bbc.com/news/world-asia",
+        "org": "BBC News",
+        "excerpt": "Over 91 people killed in daylong clashes on August 4, Sunday. This is the bloodiest day of the movement."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "94e488bb733c28e8d79286772d8d2c733f38e7af20b11b5763e5da199b961841",
+    "prev_chain_hash": "b42d542f18b4dd12cfe971a37d1d9256d1cf94ad034bef096babb71ae6ec5544",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-027",
+    "event_date": "2024-08-05",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¶à§‡à¦– à¦¹à¦¾à¦¸à¦¿à¦¨à¦¾ à¦¸à¦¾à¦®à¦°à¦¿à¦• à¦¹à§‡à¦²à¦¿à¦•à¦ªà§à¦Ÿà¦¾à¦°à§‡ à¦­à¦¾à¦°à¦¤à§‡ à¦ªà¦¾à¦²à¦¿à¦¯à¦¼à§‡ à¦¯à¦¾à¦¨à¥¤",
+    "description_en": "Sheikh Hasina flees to India aboard a military helicopter.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/",
+        "org": "Reuters",
+        "excerpt": "Sheikh Hasina flees to India aboard a military helicopter."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "a6c14d15bcf9be8e254d649c1f37f79c7fab18907668684af834e86541b640ff",
+    "prev_chain_hash": "10089a0982b66e9518dcf1799d049300da4a4be40963e475169f502543cfd73d",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-028",
+    "event_date": "2024-08-05",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦œà¦¾à¦¤à§€à¦¯à¦¼ à¦¸à§à¦®à§ƒà¦¤à¦¿à¦¸à§Œà¦§à§‡ à¦œà¦¨à¦¤à¦¾ à¦¸à¦®à¦¬à§‡à¦¤ à¦¹à¦¯à¦¼à§‡ à¦¬à¦¿à¦œà¦¯à¦¼ à¦‰à¦¦à¦¯à¦¾à¦ªà¦¨ à¦•à¦°à§‡à¥¤",
+    "description_en": "Crowds gather at the National Martyrs' Memorial to celebrate victory.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.aljazeera.com/",
+        "org": "Al Jazeera",
+        "excerpt": "Crowds gather at the National Martyrs' Memorial to celebrate victory."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "eaebb97102a4e52ad1a8902b506564f69669700e44dcaee6fe4cc2202d60e060",
+    "prev_chain_hash": "26cdca2d2fedf4f10998057215b3f6a22e95f2673ebe36fb640e99019b3c4bcb",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-029",
+    "event_date": "2024-07-17",
+    "location": "BUET, Dhaka",
+    "description_bn": "à¦¬à§à¦¯à¦¼à§‡à¦Ÿà§‡à¦° à¦¶à¦¿à¦•à§à¦·à¦¾à¦°à§à¦¥à§€à¦°à¦¾ à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à§‡ à¦¯à§‹à¦— à¦¦à§‡à¦¯à¦¼à¥¤ à¦ªà§à¦°à¦•à§Œà¦¶à¦² à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à¦¯à¦¼à§‡à¦° à¦¶à¦¿à¦•à§à¦·à¦¾à¦°à§à¦¥à§€à¦°à¦¾ à¦°à¦¾à¦œà¦ªà¦¥à§‡ à¦¨à¦¾à¦®à§‡à¥¤",
+    "description_en": "BUET students join the movement. Engineering university students take to the streets.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.thedailystar.net/",
+        "org": "The Daily Star",
+        "excerpt": "BUET students join the movement. Engineering university students take to the streets."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "4b19960d7e836537c8bd241ac0c3887d0c14188ad325c2e09fd1f90301db6f63",
+    "prev_chain_hash": "89f45e0d440bc8e514c0967bdfbb42417017e5cf92e98e9fea532f8aae341abe",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-030",
+    "event_date": "2024-07-18",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¸à¦°à¦•à¦¾à¦° à¦§à¦¾à¦°à¦¾ à§§à§ªà§ª à¦œà¦¾à¦°à¦¿ à¦•à¦°à§‡ à¦œà¦®à¦¾à¦¯à¦¼à§‡à¦¤ à¦¨à¦¿à¦·à¦¿à¦¦à§à¦§ à¦•à¦°à§‡à¥¤ à¦¶à¦¿à¦•à§à¦·à¦¾à¦°à§à¦¥à§€à¦°à¦¾ à¦¨à¦¿à¦·à§‡à¦§à¦¾à¦œà§à¦žà¦¾ à¦…à¦®à¦¾à¦¨à§à¦¯ à¦•à¦°à§‡à¥¤",
+    "description_en": "Government imposes Section 144, banning public gatherings. Students defy the ban.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://bdnews24.com/",
+        "org": "bdnews24.com",
+        "excerpt": "Government imposes Section 144, banning public gatherings. Students defy the ban."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "0b30518951e312273b34a4d689f232ea76ecbcb3d982cafc0ba3badc1a601a8f",
+    "prev_chain_hash": "4fb97fc17f0eeffaa3368506f98b5959cc121511f8992e0591b18dee004a3466",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-031",
+    "event_date": "2024-07-20",
+    "location": "Dhaka Medical College Hospital",
+    "description_bn": "à¦¢à¦¾à¦•à¦¾ à¦®à§‡à¦¡à¦¿à¦•à§‡à¦² à¦•à¦²à§‡à¦œ à¦¹à¦¾à¦¸à¦ªà¦¾à¦¤à¦¾à¦²à§‡ à¦†à¦¹à¦¤à¦¦à§‡à¦° à¦­à¦¿à¦¡à¦¼à§‡ à¦šà¦¿à¦•à¦¿à§Žà¦¸à¦¾ à¦¬à§à¦¯à¦¬à¦¸à§à¦¥à¦¾ à¦­à§‡à¦™à§‡ à¦ªà¦¡à¦¼à§‡à¥¤",
+    "description_en": "Dhaka Medical College Hospital overwhelmed with injured. Medical system breaks down under the influx.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.prothomalo.com/",
+        "org": "Prothom Alo",
+        "excerpt": "Dhaka Medical College Hospital overwhelmed with injured. Medical system breaks down under the influx."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "5f15aaf37212008a33241b99f4c781278b2d57b0b784ee62774604530f250b38",
+    "prev_chain_hash": "8c96abad36e8b11a19412569270ab70a4e4220b930dcb0ea236b8deb3ea9259d",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-032",
+    "event_date": "2024-07-18",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¸à¦°à¦•à¦¾à¦° à¦¸à¦•à¦² à¦¶à¦¿à¦•à§à¦·à¦¾ à¦ªà§à¦°à¦¤à¦¿à¦·à§à¦ à¦¾à¦¨ à¦…à¦¨à¦¿à¦°à§à¦¦à¦¿à¦·à§à¦Ÿà¦•à¦¾à¦²à§‡à¦° à¦œà¦¨à§à¦¯ à¦¬à¦¨à§à¦§ à¦˜à§‹à¦·à¦£à¦¾ à¦•à¦°à§‡à¥¤",
+    "description_en": "Government declares indefinite closure of all educational institutions.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.dhakatribune.com/",
+        "org": "Dhaka Tribune",
+        "excerpt": "Government declares indefinite closure of all educational institutions."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "62474cde0ac1d2f71da21c0b98c7e0b2e1a5796f474ffb99fba9151957aa2c5d",
+    "prev_chain_hash": "603032ca4a246f0c487f3f3a8eca34e8d5b676c55db82e0679221d5be2d174ea",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-033",
+    "event_date": "2024-08-05",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦†à¦“à¦¯à¦¼à¦¾à¦®à§€ à¦²à§€à¦—à§‡à¦° à¦•à§‡à¦¨à§à¦¦à§à¦°à§€à¦¯à¦¼ à¦•à¦¾à¦°à§à¦¯à¦¾à¦²à¦¯à¦¼à§‡ à¦†à¦—à§à¦¨ à¦¦à§‡à¦“à¦¯à¦¼à¦¾ à¦¹à¦¯à¦¼à¥¤ à¦¬à§‡à¦¶ à¦•à¦¿à¦›à§ à¦¦à¦²à§€à¦¯à¦¼ à¦…à¦«à¦¿à¦¸ à¦­à¦¾à¦‚à¦šà§à¦° à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Awami League central office set on fire. Several party offices vandalized.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.bbc.com/",
+        "org": "BBC News",
+        "excerpt": "Awami League central office set on fire. Several party offices vandalized."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "cd342bdd0117e8af6c9856f1c890b08def6e4e93d2234158304717e65f9db1e8",
+    "prev_chain_hash": "2f4dedf7ba85ba1aac041ab69474305635b533255d8d11b0bb80cdf8ea8cda6d",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-034",
+    "event_date": "2024-08-05",
+    "location": "Multiple locations, Bangladesh",
+    "description_bn": "à¦¸à¦‚à¦–à§à¦¯à¦¾à¦²à¦˜à§ à¦¸à¦®à§à¦ªà§à¦°à¦¦à¦¾à¦¯à¦¼à§‡à¦° à¦‰à¦ªà¦° à¦¹à¦¾à¦®à¦²à¦¾à¦° à¦…à¦­à¦¿à¦¯à§‹à¦— à¦“à¦ à§‡à¥¤ à¦¹à¦¿à¦¨à§à¦¦à§ à¦®à¦¨à§à¦¦à¦¿à¦° à¦“ à¦¬à§à¦¯à¦¬à¦¸à¦¾à¦¯à¦¼ à¦†à¦•à§à¦°à¦®à¦£à§‡à¦° à¦–à¦¬à¦° à¦†à¦¸à§‡à¥¤",
+    "description_en": "Reports of attacks on minority communities. Hindu temples and businesses reportedly attacked.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.hrw.org/",
+        "org": "Human Rights Watch",
+        "excerpt": "Reports of attacks on minority communities. Hindu temples and businesses reportedly attacked."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "0aa4c696e9b7bea65095fbad78911af39414a7c6c06cb9e5e431a077b2e1aad7",
+    "prev_chain_hash": "bec594027aa67b180e0290918b6d41abfb4172d71ddad35452aa21c79a03c738",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-035",
+    "event_date": "2024-07-19",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¸à¦¾à¦‚à¦¬à¦¾à¦¦à¦¿à¦•à¦¦à§‡à¦° à¦‰à¦ªà¦° à¦¹à¦¾à¦®à¦²à¦¾ à¦“ à¦—à§à¦°à§‡à¦ªà§à¦¤à¦¾à¦°à§‡à¦° à¦˜à¦Ÿà¦¨à¦¾ à¦˜à¦Ÿà§‡à¥¤ à¦¬à§‡à¦¶ à¦•à¦¯à¦¼à§‡à¦•à¦œà¦¨ à¦¸à¦¾à¦‚à¦¬à¦¾à¦¦à¦¿à¦• à¦†à¦¹à¦¤ à¦¹à¦¨à¥¤",
+    "description_en": "Journalists attacked and arrested while covering protests. Several reporters injured.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://rsf.org/en",
+        "org": "Reporters Without Borders",
+        "excerpt": "Journalists attacked and arrested while covering protests. Several reporters injured."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "d90e94c6436042364f349c2065febecde34578b0fc740551af9b8bdd2f52a78e",
+    "prev_chain_hash": "de8b2adb0f9cc319bd06173f26127e7a7b0b041e14d5163f390158c5ffcfb904",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-036",
+    "event_date": "2024-07-26",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à¦•à¦¾à¦°à§€à¦°à¦¾ 'à¦¨à¦¨-à¦•à§‹à¦…à¦ªà¦¾à¦°à§‡à¦¶à¦¨' à¦†à¦¨à§à¦¦à§‹à¦²à¦¨ à¦˜à§‹à¦·à¦£à¦¾ à¦•à¦°à§‡à¥¤ à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦•à¦°à§à¦®à¦šà¦¾à¦°à§€à¦¦à§‡à¦° à¦•à¦¾à¦œ à¦¬à¦¯à¦¼à¦•à¦Ÿà§‡à¦° à¦†à¦¹à§à¦¬à¦¾à¦¨ à¦œà¦¾à¦¨à¦¾à¦¨à§‹ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Protesters declare a 'non-cooperation' movement. Government employees called to boycott work.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.thedailystar.net/",
+        "org": "The Daily Star",
+        "excerpt": "Protesters declare a 'non-cooperation' movement. Government employees called to boycott work."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "bedeab795d6a5e8cc24d5d1072a856c183c03a705d724cacdd64525c078c261b",
+    "prev_chain_hash": "12dbcea0caec9a3082589383ad96d69a8e997d5277f6c8694fa54a5bcab26021",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-037",
+    "event_date": "2024-08-03",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦›à¦¾à¦¤à§à¦°à¦°à¦¾ 'à¦à¦• à¦¦à¦«à¦¾ à¦à¦• à¦¦à¦¾à¦¬à¦¿ - à¦¹à¦¾à¦¸à¦¿à¦¨à¦¾à¦° à¦ªà¦¤à¦¨ à¦šà¦¾à¦‡' à¦¸à§à¦²à§‹à¦—à¦¾à¦¨ à¦¤à§‹à¦²à§‡à¥¤",
+    "description_en": "Students raise the slogan 'One Point One Demand - We Want Hasina's Fall'.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.prothomalo.com/",
+        "org": "Prothom Alo",
+        "excerpt": "Students raise the slogan 'One Point One Demand - We Want Hasina's Fall'."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "ea76dae9079e304edb0adbae4cd0b6c0d9ee84380e9a3f829f28333396a99d85",
+    "prev_chain_hash": "958385219d6950bd706527e4906cfe1f9f0e51ed5c5c7ab53ec9544a8767665e",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-038",
+    "event_date": "2024-07-19",
+    "location": "Ashulia, Dhaka",
+    "description_bn": "à¦†à¦¶à§à¦²à¦¿à¦¯à¦¼à¦¾à¦¯à¦¼ à¦—à¦¾à¦°à§à¦®à§‡à¦¨à§à¦Ÿà¦¸ à¦•à¦¾à¦°à¦–à¦¾à¦¨à¦¾à¦° à¦¶à§à¦°à¦®à¦¿à¦•à¦°à¦¾ à¦¬à¦¿à¦•à§à¦·à§‹à¦­à§‡ à¦¯à§‹à¦— à¦¦à§‡à¦¯à¦¼à¥¤",
+    "description_en": "Garment factory workers in Ashulia join the protests.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.aljazeera.com/",
+        "org": "Al Jazeera",
+        "excerpt": "Garment factory workers in Ashulia join the protests."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "c91439b8e65b28305eb2b38f9330fe740461cb8cc31ecd9654757be4c559ba92",
+    "prev_chain_hash": "c4fd7d6f246899a78c69c16e84165a8b507a4e9511fb104cb72d104c728f4bb2",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-039",
+    "event_date": "2024-07-20",
+    "location": "Narayanganj, Bangladesh",
+    "description_bn": "à¦¨à¦¾à¦°à¦¾à¦¯à¦¼à¦£à¦—à¦žà§à¦œà§‡ à¦¬à§à¦¯à¦¾à¦ªà¦• à¦¸à¦‚à¦˜à¦°à§à¦·à¥¤ à¦•à¦¯à¦¼à§‡à¦•à¦œà¦¨ à¦¨à¦¿à¦¹à¦¤ à¦¹à¦“à¦¯à¦¼à¦¾à¦° à¦–à¦¬à¦° à¦†à¦¸à§‡à¥¤",
+    "description_en": "Widespread clashes in Narayanganj. Reports of several deaths.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.thedailystar.net/",
+        "org": "The Daily Star",
+        "excerpt": "Widespread clashes in Narayanganj. Reports of several deaths."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "a1282b9e7b1ef0fa12a5c2061bf308f0741bcb33c521a1a8d0910b1d83ab9d23",
+    "prev_chain_hash": "da98b82e928c8d98154e335824c1c3f40e90806cdb393bf8647cebedccc3fedf",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-040",
+    "event_date": "2024-08-05",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¸à§‡à¦¨à¦¾à¦¬à¦¾à¦¹à¦¿à¦¨à§€ à¦ªà§à¦°à¦§à¦¾à¦¨à¦®à¦¨à§à¦¤à§à¦°à§€à¦•à§‡ à¦†à¦° à¦¸à§à¦°à¦•à§à¦·à¦¾ à¦¦à§‡à¦“à¦¯à¦¼à¦¾ à¦¸à¦®à§à¦­à¦¬ à¦¨à¦¯à¦¼ à¦¬à¦²à§‡ à¦œà¦¾à¦¨à¦¾à¦¯à¦¼à¥¤",
+    "description_en": "Military informs the Prime Minister that they can no longer provide security.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.bbc.com/",
+        "org": "BBC News",
+        "excerpt": "Military informs the Prime Minister that they can no longer provide security."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "496611b0415a2c1e30a24b474005816dda0f65adfb1a01d37cd2dca479566dfa",
+    "prev_chain_hash": "4cb508b7bb8f2203cc1888e193276988cd1dab7883333657577dd3de31265783",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-001",
+    "event_date": "2024-07-19",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: 'à§§à§¯ à¦œà§à¦²à¦¾à¦‡ à¦¢à¦¾à¦•à¦¾à¦¯à¦¼ à§§,à§¦à§¦à§¦ à¦œà¦¨à§‡à¦° à¦¬à§‡à¦¶à¦¿ à¦®à¦¾à¦¨à§à¦· à¦®à¦¾à¦°à¦¾ à¦—à§‡à¦›à§‡à¥¤' â€” à¦à¦Ÿà¦¿ à¦®à¦¿à¦¥à§à¦¯à¦¾à¥¤ à¦ªà§à¦°à¦•à§ƒà¦¤ à¦¸à¦‚à¦–à§à¦¯à¦¾ à¦…à¦¨à§‡à¦• à¦•à¦® à¦›à¦¿à¦², à¦¯à¦¦à¦¿à¦“ à¦¸à¦ à¦¿à¦• à¦¸à¦‚à¦–à§à¦¯à¦¾ à¦¨à¦¿à¦¯à¦¼à§‡ à¦¬à¦¿à¦¤à¦°à§à¦• à¦†à¦›à§‡à¥¤",
+    "description_en": "CLAIM: 'Over 1,000 people died in Dhaka on July 19.' â€” FALSE. The actual number was significantly lower, though exact figures are disputed.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.rumorscannerbd.com/",
+        "org": "Rumor Scanner",
+        "excerpt": "CLAIM: 'Over 1,000 people died in Dhaka on July 19.' â€” FALSE. The actual number was significantly lower, though exact figures are disputed."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "f8face9604f4e9b043b52c4cfe3acf5cf6d5eab74d44327db4043be9ee4a02af",
+    "prev_chain_hash": "b85423d04d1136bc2a26d3822bf6f355ce86cf38655a53f3be3e35d31f9eaeba",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-002",
+    "event_date": "2024-07-18",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: 'à¦¸à§‡à¦¨à¦¾à¦¬à¦¾à¦¹à¦¿à¦¨à§€ à¦¹à§‡à¦²à¦¿à¦•à¦ªà§à¦Ÿà¦¾à¦° à¦¥à§‡à¦•à§‡ à¦¬à¦¿à¦•à§à¦·à§‹à¦­à¦•à¦¾à¦°à§€à¦¦à§‡à¦° à¦‰à¦ªà¦° à¦—à§à¦²à¦¿ à¦šà¦¾à¦²à¦¿à¦¯à¦¼à§‡à¦›à§‡à¥¤' â€” à¦à¦‡ à¦¦à¦¾à¦¬à¦¿à¦° à¦•à§‹à¦¨à§‹ à¦¯à¦¾à¦šà¦¾à¦‡à¦¯à§‹à¦—à§à¦¯ à¦ªà§à¦°à¦®à¦¾à¦£ à¦ªà¦¾à¦“à¦¯à¦¼à¦¾ à¦¯à¦¾à¦¯à¦¼à¦¨à¦¿à¥¤",
+    "description_en": "CLAIM: 'Military fired on protesters from helicopters.' â€” No verifiable evidence has been found to support this claim.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.rumorscannerbd.com/",
+        "org": "Rumor Scanner",
+        "excerpt": "CLAIM: 'Military fired on protesters from helicopters.' â€” No verifiable evidence has been found to support this claim."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "134b28e07c880d4e83064f3330879c527ac59a86ed19e84675704875f92363e3",
+    "prev_chain_hash": "9049664711725a3e7b35283d0f6810723ae1dbe23c096f4928ba12eb283bc0b2",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-003",
+    "event_date": "2024-07-20",
+    "location": "Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: à¦­à¦¾à¦‡à¦°à¦¾à¦² à¦›à¦¬à¦¿à¦¤à§‡ 'à§¨à§¦à§¨à§ª à¦¸à¦¾à¦²à§‡à¦° à¦œà§à¦²à¦¾à¦‡ à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à§‡ à¦ªà§à¦²à¦¿à¦¶à§‡à¦° à¦—à§à¦²à¦¿à¦¤à§‡ à¦†à¦¹à¦¤ à¦¶à¦¿à¦¶à§' à¦¦à§‡à¦–à¦¾à¦¨à§‹ à¦¹à¦šà§à¦›à§‡ â€” à¦†à¦¸à¦²à§‡ à¦›à¦¬à¦¿à¦Ÿà¦¿ à§¨à§¦à§§à§® à¦¸à¦¾à¦²à§‡à¦° à¦¸à¦¿à¦°à¦¿à¦¯à¦¼à¦¾à¦° à¦¯à§à¦¦à§à¦§à§‡à¦°à¥¤",
+    "description_en": "CLAIM: Viral image shows 'child injured by police gunfire during July 2024 protests' â€” The image is actually from the Syrian war in 2018.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.boomlive.in/",
+        "org": "BOOM Bangladesh / AFP Fact Check",
+        "excerpt": "CLAIM: Viral image shows 'child injured by police gunfire during July 2024 protests' â€” The image is actually from the Syrian war in 2018."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "b6b308a07c54dbdba2806d5b56e36767d677852231854b582c60444f3fcc27f6",
+    "prev_chain_hash": "6c5c9c07f72b0c19c36d8d08613297e0c742ea3efa3158e9061359f86350bd4d",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-004",
+    "event_date": "2024-07-19",
+    "location": "Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: 'à¦¢à¦¾à¦•à¦¾à¦¯à¦¼ à¦Ÿà§à¦¯à¦¾à¦‚à¦• à¦®à§‹à¦¤à¦¾à¦¯à¦¼à§‡à¦¨ à¦•à¦°à¦¾ à¦¹à¦¯à¦¼à§‡à¦›à§‡ à¦à¦¬à¦‚ à¦Ÿà§à¦¯à¦¾à¦‚à¦• à¦¥à§‡à¦•à§‡ à¦—à§‹à¦²à¦¾à¦¬à¦°à§à¦·à¦£ à¦•à¦°à¦¾ à¦¹à¦¯à¦¼à§‡à¦›à§‡à¥¤' â€” à¦®à¦¿à¦¥à§à¦¯à¦¾à¥¤ à¦¸à§‡à¦¨à¦¾à¦¬à¦¾à¦¹à¦¿à¦¨à§€ à¦®à§‹à¦¤à¦¾à¦¯à¦¼à§‡à¦¨ à¦¹à¦²à§‡à¦“ à¦Ÿà§à¦¯à¦¾à¦‚à¦• à¦¥à§‡à¦•à§‡ à¦—à§‹à¦²à¦¾à¦¬à¦°à§à¦·à¦£à§‡à¦° à¦•à§‹à¦¨à§‹ à¦ªà§à¦°à¦®à¦¾à¦£ à¦¨à§‡à¦‡à¥¤",
+    "description_en": "CLAIM: 'Tanks deployed in Dhaka and fired shells at protesters.' â€” FALSE. While military was deployed, there is no evidence of tank shelling.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.rumorscannerbd.com/",
+        "org": "Rumor Scanner",
+        "excerpt": "CLAIM: 'Tanks deployed in Dhaka and fired shells at protesters.' â€” FALSE. While military was deployed, there is no evidence of tank shelling."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "a3b877c22b54a675602e8e97863d61f4c781db90e3eeddf13f9db6ce13263835",
+    "prev_chain_hash": "0c9a0f0ebe573d90a7db27d92c66b77c5c9dc72f91d2fc9c1e8918a8af6103f6",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-005",
+    "event_date": "2024-07-21",
+    "location": "Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: à¦­à¦¾à¦‡à¦°à¦¾à¦² à¦­à¦¿à¦¡à¦¿à¦“ 'à§¨à§¦à§¨à§ª à¦¸à¦¾à¦²à§‡ à¦¢à¦¾à¦•à¦¾à¦¯à¦¼ à¦ªà§à¦²à¦¿à¦¶à§‡à¦° à¦¨à§ƒà¦¶à¦‚à¦¸à¦¤à¦¾' à¦¦à§‡à¦–à¦¾à¦šà§à¦›à§‡ â€” à¦†à¦¸à¦²à§‡ à¦­à¦¿à¦¡à¦¿à¦“à¦Ÿà¦¿ à§¨à§¦à§§à§® à¦¸à¦¾à¦²à§‡à¦° à¦•à§‹à¦Ÿà¦¾ à¦¸à¦‚à¦¸à§à¦•à¦¾à¦° à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à§‡à¦°à¥¤",
+    "description_en": "CLAIM: Viral video shows 'police brutality in Dhaka 2024' â€” The video is actually from the 2018 quota reform movement.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://factcheck.afp.com/",
+        "org": "AFP Fact Check",
+        "excerpt": "CLAIM: Viral video shows 'police brutality in Dhaka 2024' â€” The video is actually from the 2018 quota reform movement."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "0a6a35d1a07bd3dfaed7384e9f27eb4d6811f9d17cb76159a39b65b4861dadd9",
+    "prev_chain_hash": "459764a123c5dc9c5be56c3775991d563d9913897c3901e54601f3e1142373ac",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-006",
+    "event_date": "2024-08-05",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: 'à¦¶à§‡à¦– à¦¹à¦¾à¦¸à¦¿à¦¨à¦¾ à¦—à§à¦°à§‡à¦ªà§à¦¤à¦¾à¦° à¦¹à¦¯à¦¼à§‡à¦›à§‡à¦¨ à¦à¦¬à¦‚ à¦•à¦¾à¦°à¦¾à¦—à¦¾à¦°à§‡ à¦†à¦›à§‡à¦¨à¥¤' â€” à¦®à¦¿à¦¥à§à¦¯à¦¾à¥¤ à¦¤à¦¿à¦¨à¦¿ à¦­à¦¾à¦°à¦¤à§‡ à¦ªà¦¾à¦²à¦¿à¦¯à¦¼à§‡ à¦—à§‡à¦›à§‡à¦¨à¥¤",
+    "description_en": "CLAIM: 'Sheikh Hasina has been arrested and is in prison.' â€” FALSE. She fled to India.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/",
+        "org": "Reuters",
+        "excerpt": "CLAIM: 'Sheikh Hasina has been arrested and is in prison.' â€” FALSE. She fled to India."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "f12dd7fa4ceffc385782f430ec51b4f0c80e25cc1add58c04d87daf082983c8d",
+    "prev_chain_hash": "1977bd925b827912e2e0340aec089c985eb5769ce94ad109113f822bc4715dcc",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-007",
+    "event_date": "2024-07-20",
+    "location": "Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: à¦­à¦¾à¦‡à¦°à¦¾à¦² à¦›à¦¬à¦¿à¦¤à§‡ 'à¦œà§à¦²à¦¾à¦‡ à§¨à§¦à§¨à§ª-à¦ à¦¢à¦¾à¦•à¦¾à¦¯à¦¼ à¦œà§à¦¬à¦²à¦¨à§à¦¤ à¦­à¦¬à¦¨' à¦¦à§‡à¦–à¦¾à¦¨à§‹ à¦¹à¦šà§à¦›à§‡ â€” à¦†à¦¸à¦²à§‡ à¦›à¦¬à¦¿à¦Ÿà¦¿ à§¨à§¦à§§à§© à¦¸à¦¾à¦²à§‡ à¦°à¦¾à¦¨à¦¾ à¦ªà§à¦²à¦¾à¦œà¦¾ à¦§à¦¸à§‡à¦° à¦ªà¦°à§‡à¦°à¥¤",
+    "description_en": "CLAIM: Viral image shows 'burning building in Dhaka during July 2024' â€” The image is actually from after the 2013 Rana Plaza collapse.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.boomlive.in/",
+        "org": "BOOM Bangladesh",
+        "excerpt": "CLAIM: Viral image shows 'burning building in Dhaka during July 2024' â€” The image is actually from after the 2013 Rana Plaza collapse."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "d4328bd37fcf9ee58623a1685836296d426acb4c7b991927803ed1178e42e8a5",
+    "prev_chain_hash": "40b2d65700f75b5040dfbe6b0dde4167d23c9cd4445cde83e9a7be2c8e54dbaa",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-008",
+    "event_date": "2024-07-19",
+    "location": "Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: à¦›à¦¬à¦¿à¦Ÿà¦¿ 'à§¨à§¦à§¨à§ª à¦¸à¦¾à¦²à§‡à¦° à¦œà§à¦²à¦¾à¦‡à¦¯à¦¼à§‡ à¦¢à¦¾à¦•à¦¾à¦¯à¦¼ à¦¸à§‡à¦¨à¦¾ à¦•à¦¨à¦­à¦¯à¦¼' à¦¦à§‡à¦–à¦¾à¦šà§à¦›à§‡ â€” à¦†à¦¸à¦²à§‡ à¦›à¦¬à¦¿à¦Ÿà¦¿ à¦®à¦¿à¦¯à¦¼à¦¾à¦¨à¦®à¦¾à¦° à¦¸à§‡à¦¨à¦¾à¦¬à¦¾à¦¹à¦¿à¦¨à§€à¦° à§¨à§¦à§¨à§§ à¦¸à¦¾à¦²à§‡à¦° à¦…à¦­à§à¦¯à§à¦¤à§à¦¥à¦¾à¦¨à§‡à¦°à¥¤",
+    "description_en": "CLAIM: Image shows 'military convoy in Dhaka during July 2024' â€” The image is actually of Myanmar military during the 2021 coup.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://factcheck.afp.com/",
+        "org": "AFP Fact Check",
+        "excerpt": "CLAIM: Image shows 'military convoy in Dhaka during July 2024' â€” The image is actually of Myanmar military during the 2021 coup."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "90f7e426ce99ead0991873a894b607f0e0dc0d8825bc13ece6fc15f3a36ff2c5",
+    "prev_chain_hash": "55f60bdd6c0fb030395e0e5101934d0f2bd0a99b60452cdb5598ebc50aaaacea",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-009",
+    "event_date": "2024-07-22",
+    "location": "Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: 'à¦œà¦¾à¦¤à¦¿à¦¸à¦‚à¦˜ à¦¬à¦¾à¦‚à¦²à¦¾à¦¦à§‡à¦¶à§‡ à¦¶à¦¾à¦¨à§à¦¤à¦¿à¦°à¦•à§à¦·à§€ à¦¬à¦¾à¦¹à¦¿à¦¨à§€ à¦ªà¦¾à¦ à¦¾à¦¨à§‹à¦° à¦¸à¦¿à¦¦à§à¦§à¦¾à¦¨à§à¦¤ à¦¨à¦¿à¦¯à¦¼à§‡à¦›à§‡à¥¤' â€” à¦®à¦¿à¦¥à§à¦¯à¦¾à¥¤ à¦œà¦¾à¦¤à¦¿à¦¸à¦‚à¦˜ à¦à¦®à¦¨ à¦•à§‹à¦¨à§‹ à¦¸à¦¿à¦¦à§à¦§à¦¾à¦¨à§à¦¤ à¦¨à§‡à¦¯à¦¼à¦¨à¦¿à¥¤",
+    "description_en": "CLAIM: 'UN has decided to send peacekeeping forces to Bangladesh.' â€” FALSE. The UN made no such decision.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.rumorscannerbd.com/",
+        "org": "Rumor Scanner",
+        "excerpt": "CLAIM: 'UN has decided to send peacekeeping forces to Bangladesh.' â€” FALSE. The UN made no such decision."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "c5de0c5629ff41ab6147cf1fbcd8548f778f7cad2044bfb729654a5503d49dff",
+    "prev_chain_hash": "7d784a26216bd1c770d9b6c3756acd1dadcbf635815632215c3e1e215e736280",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-010",
+    "event_date": "2024-08-04",
+    "location": "Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: 'à§ª à¦†à¦—à¦¸à§à¦Ÿ à§«,à§¦à§¦à§¦ à¦œà¦¨à§‡à¦°à¦“ à¦¬à§‡à¦¶à¦¿ à¦®à¦¾à¦¨à§à¦· à¦¨à¦¿à¦¹à¦¤ à¦¹à¦¯à¦¼à§‡à¦›à§‡à¥¤' â€” à¦®à¦¿à¦¥à§à¦¯à¦¾à¥¤ à¦ªà§à¦°à¦•à§ƒà¦¤ à¦¸à¦‚à¦–à§à¦¯à¦¾ à¦ªà§à¦°à¦¾à¦¯à¦¼ à§¯à§§ à¦œà¦¨à§‡à¦° à¦•à¦¾à¦›à¦¾à¦•à¦¾à¦›à¦¿ à¦¬à¦²à§‡ à¦œà¦¾à¦¨à¦¾ à¦—à§‡à¦›à§‡à¥¤",
+    "description_en": "CLAIM: 'Over 5,000 people killed on August 4.' â€” FALSE. The actual number is reported to be around 91.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.thedailystar.net/",
+        "org": "The Daily Star",
+        "excerpt": "CLAIM: 'Over 5,000 people killed on August 4.' â€” FALSE. The actual number is reported to be around 91."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "889207c04ff3678cc30575801b05c41c566dff22c728df9243db0086cd1c68fc",
+    "prev_chain_hash": "9abd44ce197b934c303a8f45c2d588a959f0738b99e9ad4f2fb740a11cb9193e",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-011",
+    "event_date": "2024-07-18",
+    "location": "Chittagong, Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: 'à¦šà¦Ÿà§à¦Ÿà¦—à§à¦°à¦¾à¦®à§‡ à¦à¦•à¦¦à¦¿à¦¨à§‡ à§«à§¦à§¦ à¦œà¦¨ à¦¨à¦¿à¦¹à¦¤ à¦¹à¦¯à¦¼à§‡à¦›à§‡à¥¤' â€” à¦®à¦¿à¦¥à§à¦¯à¦¾à¥¤ à¦à¦‡ à¦¸à¦‚à¦–à§à¦¯à¦¾ à¦¬à§à¦¯à¦¾à¦ªà¦•à¦­à¦¾à¦¬à§‡ à¦…à¦¤à¦¿à¦°à¦žà§à¦œà¦¿à¦¤à¥¤",
+    "description_en": "CLAIM: '500 people died in a single day in Chittagong.' â€” FALSE. This number is vastly exaggerated.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.rumorscannerbd.com/",
+        "org": "Rumor Scanner",
+        "excerpt": "CLAIM: '500 people died in a single day in Chittagong.' â€” FALSE. This number is vastly exaggerated."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "4969b67e319f9e5bd17164d38bcaf8f513be2220b5745075bd7dd573e7227cef",
+    "prev_chain_hash": "de8d353cca01f94ed1ff39a223e6ee97433e5bb33bf1abaa19a1a29d93f528bd",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-012",
+    "event_date": "2024-07-20",
+    "location": "Mirpur, Dhaka",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: 'à¦¸à§‡à¦¨à¦¾à¦¬à¦¾à¦¹à¦¿à¦¨à§€ à¦®à¦¿à¦°à¦ªà§à¦°à§‡ à¦Ÿà§à¦¯à¦¾à¦‚à¦• à¦®à§‹à¦¤à¦¾à¦¯à¦¼à§‡à¦¨ à¦•à¦°à§‡à¦›à§‡ à¦à¦¬à¦‚ à¦¬à§‡à¦¸à¦¾à¦®à¦°à¦¿à¦• à¦¨à¦¾à¦—à¦°à¦¿à¦•à¦¦à§‡à¦° à¦‰à¦ªà¦° à¦—à§‹à¦²à¦¾à¦¬à¦°à§à¦·à¦£ à¦•à¦°à§‡à¦›à§‡à¥¤' â€” à¦Ÿà§à¦¯à¦¾à¦‚à¦• à¦®à§‹à¦¤à¦¾à¦¯à¦¼à§‡à¦¨à§‡à¦° à¦«à¦Ÿà§‹à¦—à§à¦°à¦¾à¦«à¦¿à¦• à¦ªà§à¦°à¦®à¦¾à¦£ à¦¨à§‡à¦‡à¥¤",
+    "description_en": "CLAIM: 'Army deployed tanks in Mirpur and shelled civilians.' â€” No photographic evidence of tank deployment exists.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.rumorscannerbd.com/",
+        "org": "Rumor Scanner",
+        "excerpt": "CLAIM: 'Army deployed tanks in Mirpur and shelled civilians.' â€” No photographic evidence of tank deployment exists."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "106790cd615dfc50ff41f0b234a6ba38e2602f4e9a371ba74c8d9dc13256d80e",
+    "prev_chain_hash": "abf189763af8ab3a1acac8b60e7f5a2d179035c808c4e383e05b98aa7aa0d9c4",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-013",
+    "event_date": "2024-07-19",
+    "location": "Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: à¦­à¦¾à¦‡à¦°à¦¾à¦² à¦›à¦¬à¦¿ 'à¦œà§à¦²à¦¾à¦‡ à§¨à§¦à§¨à§ª-à¦ à¦¢à¦¾à¦•à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à¦¯à¦¼à§‡ à¦—à§à¦²à¦¿à¦¤à§‡ à¦¨à¦¿à¦¹à¦¤ à¦›à¦¾à¦¤à§à¦°' à¦¦à§‡à¦–à¦¾à¦šà§à¦›à§‡ â€” à¦›à¦¬à¦¿à¦Ÿà¦¿ à§¨à§¦à§§à§© à¦¸à¦¾à¦²à§‡à¦° à¦¹à§‡à¦«à¦¾à¦œà¦¤à§‡ à¦‡à¦¸à¦²à¦¾à¦® à¦¸à¦®à¦¾à¦¬à§‡à¦¶à§‡à¦°à¥¤",
+    "description_en": "CLAIM: Viral image shows 'student shot dead at Dhaka University in July 2024' â€” Image is from the 2013 Hefazat-e-Islam rally.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://factcheck.afp.com/",
+        "org": "AFP Fact Check",
+        "excerpt": "CLAIM: Viral image shows 'student shot dead at Dhaka University in July 2024' â€” Image is from the 2013 Hefazat-e-Islam rally."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "c5189fbfb375beeea99bf56eb100150b3558f933dc1c36d80dee6bcb747c86b1",
+    "prev_chain_hash": "9afe17a9d1d837b92bcfe6db09b318c5027a2e19b9ad04493b648a59ce3f3ef1",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-014",
+    "event_date": "2024-08-05",
+    "location": "Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: 'à¦­à¦¾à¦°à¦¤à§€à¦¯à¦¼ à¦¸à§‡à¦¨à¦¾à¦¬à¦¾à¦¹à¦¿à¦¨à§€ à¦¬à¦¾à¦‚à¦²à¦¾à¦¦à§‡à¦¶à§‡ à¦ªà§à¦°à¦¬à§‡à¦¶ à¦•à¦°à§‡à¦›à§‡à¥¤' â€” à¦¸à¦®à§à¦ªà§‚à¦°à§à¦£ à¦®à¦¿à¦¥à§à¦¯à¦¾à¥¤ à¦­à¦¾à¦°à¦¤à§€à¦¯à¦¼ à¦¸à§‡à¦¨à¦¾ à¦¬à¦¾à¦‚à¦²à¦¾à¦¦à§‡à¦¶à§‡ à¦ªà§à¦°à¦¬à§‡à¦¶ à¦•à¦°à§‡à¦¨à¦¿à¥¤",
+    "description_en": "CLAIM: 'Indian army has entered Bangladesh.' â€” Completely FALSE. Indian military did not enter Bangladesh.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.rumorscannerbd.com/",
+        "org": "Rumor Scanner",
+        "excerpt": "CLAIM: 'Indian army has entered Bangladesh.' â€” Completely FALSE. Indian military did not enter Bangladesh."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "6900ea55358ff7eee3fd927759f2825ca3468c3524fa75151760e87d67cc5bc8",
+    "prev_chain_hash": "be3881750e7d447d250b48776fc3e75cbb921e19c4d5c3a40197fd3d7a086070",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "false-015",
+    "event_date": "2024-07-25",
+    "location": "Bangladesh",
+    "description_bn": "à¦¦à¦¾à¦¬à¦¿: 'à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à¦•à¦¾à¦°à§€à¦°à¦¾ à¦ªà¦¾à¦•à¦¿à¦¸à§à¦¤à¦¾à¦¨à¦¿ à¦ªà¦¤à¦¾à¦•à¦¾ à¦¬à¦¹à¦¨ à¦•à¦°à§‡à¦›à§‡à¥¤' â€” à¦­à¦¾à¦‡à¦°à¦¾à¦² à¦›à¦¬à¦¿ à¦¬à¦¿à¦¶à§à¦²à§‡à¦·à¦£à§‡ à¦¦à§‡à¦–à¦¾ à¦¯à¦¾à¦¯à¦¼ à¦à¦Ÿà¦¿ à¦«à¦Ÿà§‹à¦¶à¦ª à¦•à¦°à¦¾à¥¤",
+    "description_en": "CLAIM: 'Protesters carried Pakistani flags.' â€” Analysis of viral image reveals it was photoshopped.",
+    "verdict_label": "false_claim",
+    "sources": [
+      {
+        "url": "https://www.boomlive.in/",
+        "org": "BOOM Bangladesh",
+        "excerpt": "CLAIM: 'Protesters carried Pakistani flags.' â€” Analysis of viral image reveals it was photoshopped."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "18848091ce8c2763ee741864ec0216e9c0c261ab67e2ec1f0c80036e0663c295",
+    "prev_chain_hash": "be00a6267e4c67beec8955594dd0e42c8e29003b188c92ba052de7b2971f9992",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-041",
+    "event_date": "2024-07-27",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦•à¦¾à¦°à¦«à¦¿à¦‰ à¦¶à¦¿à¦¥à¦¿à¦² à¦•à¦°à¦¾à¦° à¦ªà¦° à¦œà¦¨à¦œà§€à¦¬à¦¨ à¦§à§€à¦°à§‡ à¦§à§€à¦°à§‡ à¦¸à§à¦¬à¦¾à¦­à¦¾à¦¬à¦¿à¦• à¦¹à¦¤à§‡ à¦¶à§à¦°à§ à¦•à¦°à§‡à¥¤",
+    "description_en": "After curfew is relaxed, public life slowly begins to return to normal.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.thedailystar.net/",
+        "org": "The Daily Star",
+        "excerpt": "After curfew is relaxed, public life slowly begins to return to normal."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "1de28e53d6a38719239955c8d1cc8dc9d51ba3e82802885ce1b5a57a2e0532c2",
+    "prev_chain_hash": "58305eb5a1bcc13f515e727c0c32961c7f0b3dcac53e2fb3ace2f1c30a43da56",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-042",
+    "event_date": "2024-07-28",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦†à¦¨à§à¦¤à¦°à§à¦œà¦¾à¦¤à¦¿à¦• à¦¸à¦®à§à¦ªà§à¦°à¦¦à¦¾à¦¯à¦¼ à¦¬à¦¾à¦‚à¦²à¦¾à¦¦à§‡à¦¶à§‡ à¦¸à¦¹à¦¿à¦‚à¦¸à¦¤à¦¾ à¦¬à¦¨à§à¦§à§‡à¦° à¦†à¦¹à§à¦¬à¦¾à¦¨ à¦œà¦¾à¦¨à¦¾à¦¯à¦¼à¥¤ à¦œà¦¾à¦¤à¦¿à¦¸à¦‚à¦˜ à¦‰à¦¦à§à¦¬à§‡à¦— à¦ªà§à¦°à¦•à¦¾à¦¶ à¦•à¦°à§‡à¥¤",
+    "description_en": "International community calls for an end to violence in Bangladesh. UN expresses concern.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://news.un.org/",
+        "org": "United Nations News",
+        "excerpt": "International community calls for an end to violence in Bangladesh. UN expresses concern."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "7dff46e2c1245e993fdb80c6738c49edc0121a0184891361c9b5877f03cb98e6",
+    "prev_chain_hash": "db4438a0fa7ab9a4ebd7f97aa61a5ef1cd3c0aec3c065d77b102b145070d9ce3",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-043",
+    "event_date": "2024-08-02",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¶à¦¿à¦•à§à¦·à¦¾à¦°à§à¦¥à§€à¦°à¦¾ 'à¦²à¦‚ à¦®à¦¾à¦°à§à¦š à¦Ÿà§ à¦¢à¦¾à¦•à¦¾' à¦•à¦°à§à¦®à¦¸à§‚à¦šà¦¿ à¦˜à§‹à¦·à¦£à¦¾ à¦•à¦°à§‡à¥¤ à¦¦à§‡à¦¶à§‡à¦° à¦¬à¦¿à¦­à¦¿à¦¨à§à¦¨ à¦ªà§à¦°à¦¾à¦¨à§à¦¤ à¦¥à§‡à¦•à§‡ à¦®à¦¾à¦¨à§à¦· à¦¢à¦¾à¦•à¦¾à¦¯à¦¼ à¦†à¦¸à¦¤à§‡ à¦¶à§à¦°à§ à¦•à¦°à§‡à¥¤",
+    "description_en": "Students announce 'Long March to Dhaka' program. People from across the country start heading to Dhaka.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.prothomalo.com/",
+        "org": "Prothom Alo",
+        "excerpt": "Students announce 'Long March to Dhaka' program. People from across the country start heading to Dhaka."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "b40a1d732964c9ad8028fabf99f11af4e2a8a412d3590cada229b4722459fbff",
+    "prev_chain_hash": "fc765599da5c0c87aef8e948a891b5023798e510604e6ce09458ffb2803048fe",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-044",
+    "event_date": "2024-08-05",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¬à¦¾à¦‚à¦²à¦¾à¦¦à§‡à¦¶ à¦Ÿà§‡à¦²à¦¿à¦­à¦¿à¦¶à¦¨à§‡ (à¦¬à¦¿à¦Ÿà¦¿à¦­à¦¿) à¦¬à¦¿à¦•à§à¦·à§‹à¦­à¦•à¦¾à¦°à§€à¦°à¦¾ à¦ªà§à¦°à¦¬à§‡à¦¶ à¦•à¦°à§‡ à¦¸à¦®à§à¦ªà§à¦°à¦šà¦¾à¦° à¦¬à¦¨à§à¦§ à¦•à¦°à§‡ à¦¦à§‡à¦¯à¦¼à¥¤",
+    "description_en": "Protesters storm Bangladesh Television (BTV) and shut down broadcasting.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.bbc.com/",
+        "org": "BBC News",
+        "excerpt": "Protesters storm Bangladesh Television (BTV) and shut down broadcasting."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "5e125b84d974005c2605b46d0dadf0a43ca61bf43bde5f27e41946c89305045b",
+    "prev_chain_hash": "f607603fb584caa543cae37b0b4594e701681feafe7c0749d11e222691d4bd2e",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-045",
+    "event_date": "2024-08-05",
+    "location": "Dhanmondi 32, Dhaka",
+    "description_bn": "à¦¬à¦™à§à¦—à¦¬à¦¨à§à¦§à§ à¦¶à§‡à¦– à¦®à§à¦œà¦¿à¦¬à§à¦° à¦°à¦¹à¦®à¦¾à¦¨à§‡à¦° à¦§à¦¾à¦¨à¦®à¦¨à§à¦¡à¦¿ à§©à§¨ à¦¨à¦®à§à¦¬à¦°à§‡à¦° à¦¬à¦¾à¦¸à¦­à¦¬à¦¨à§‡ à¦œà¦¨à¦¤à¦¾ à¦ªà§à¦°à¦¬à§‡à¦¶ à¦•à¦°à§‡à¥¤",
+    "description_en": "Crowds enter Bangabandhu Sheikh Mujibur Rahman's residence at Dhanmondi 32.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.aljazeera.com/",
+        "org": "Al Jazeera",
+        "excerpt": "Crowds enter Bangabandhu Sheikh Mujibur Rahman's residence at Dhanmondi 32."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "5de4fa982aaa4c4e6b6eab11c854a933509939eaf5800f36479748d8e7744582",
+    "prev_chain_hash": "729b152990d23d6abadf7ae69646bd340146f8d96057b0cfca148c2e7d07e040",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-046",
+    "event_date": "2024-07-15",
+    "location": "Shahbag, Dhaka",
+    "description_bn": "à¦¶à¦¾à¦¹à¦¬à¦¾à¦—à§‡ à¦ªà§à¦°à¦¥à¦® à¦¬à¦¡à¦¼ à¦¸à¦®à¦¾à¦¬à§‡à¦¶ à¦…à¦¨à§à¦·à§à¦ à¦¿à¦¤ à¦¹à¦¯à¦¼à¥¤ à¦›à¦¾à¦¤à§à¦°à¦°à¦¾ 'à¦•à§‹à¦Ÿà¦¾ à¦¬à¦¿à¦°à§‹à¦§à§€ à¦†à¦¨à§à¦¦à§‹à¦²à¦¨' à¦¬à§à¦¯à¦¾à¦¨à¦¾à¦°à§‡ à¦œà¦¡à¦¼à§‹ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "First major rally held at Shahbag. Students gather under the 'Anti-Quota Movement' banner.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.thedailystar.net/",
+        "org": "The Daily Star",
+        "excerpt": "First major rally held at Shahbag. Students gather under the 'Anti-Quota Movement' banner."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "51f9717ab62217109540bc8f126d358742a8b4353b098e89bb6fd58bacfada3f",
+    "prev_chain_hash": "11a1828760c2daf6a3c793157c2f883154f86f94f3117378d92d7f0046fd38a4",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-047",
+    "event_date": "2024-07-16",
+    "location": "Jahangirnagar University, Savar",
+    "description_bn": "à¦œà¦¾à¦¹à¦¾à¦™à§à¦—à§€à¦°à¦¨à¦—à¦° à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à¦¯à¦¼à§‡à¦° à¦¶à¦¿à¦•à§à¦·à¦¾à¦°à§à¦¥à§€à¦°à¦¾ à¦†à¦¨à§à¦¦à§‹à¦²à¦¨à§‡ à¦¯à§‹à¦— à¦¦à§‡à¦¯à¦¼à¥¤ à¦•à§à¦¯à¦¾à¦®à§à¦ªà¦¾à¦¸à§‡ à¦¬à¦¿à¦¶à¦¾à¦² à¦¸à¦®à¦¾à¦¬à§‡à¦¶ à¦¹à¦¯à¦¼à¥¤",
+    "description_en": "Jahangirnagar University students join the movement. Massive rally held on campus.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.dhakatribune.com/",
+        "org": "Dhaka Tribune",
+        "excerpt": "Jahangirnagar University students join the movement. Massive rally held on campus."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "59539fc24b06a1c2040697dc420e94d0926486e8c976087da1e971028b78c9bf",
+    "prev_chain_hash": "bd8483e3401f90bc70bbffc564ba90c98aee3e4adc33fff8c4b3a8ed9ccd63b6",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-048",
+    "event_date": "2024-07-21",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦¸à¦°à¦•à¦¾à¦° 'à¦¶à§à¦Ÿà§ à¦…à¦¨ à¦¸à¦¾à¦‡à¦Ÿ' à¦¨à¦¿à¦°à§à¦¦à§‡à¦¶ à¦¦à§‡à¦“à¦¯à¦¼à¦¾à¦° à¦—à§à¦œà¦¬ à¦›à¦¡à¦¼à¦¾à¦¯à¦¼, à¦¯à¦¦à¦¿à¦“ à¦¸à¦°à¦•à¦¾à¦° à¦à¦Ÿà¦¿ à¦…à¦¸à§à¦¬à§€à¦•à¦¾à¦° à¦•à¦°à§‡à¥¤",
+    "description_en": "Rumors spread about government 'shoot on sight' orders, though the government denies this.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.bbc.com/bangla",
+        "org": "BBC Bangla",
+        "excerpt": "Rumors spread about government 'shoot on sight' orders, though the government denies this."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "7b2cd7ef01c153d02a6affd82ca9c11b3b24b338edac6e2e0b896938a53aaf86",
+    "prev_chain_hash": "67741f22bf826ea1466a362515b952ec4021b03d0709b91736d83bc11630d9d0",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-049",
+    "event_date": "2024-07-19",
+    "location": "Mohammadpur, Dhaka",
+    "description_bn": "à¦®à§‹à¦¹à¦¾à¦®à§à¦®à¦¦à¦ªà§à¦°à§‡ à¦ªà§à¦²à¦¿à¦¶à§‡à¦° à¦¸à¦¾à¦¥à§‡ à¦¸à¦‚à¦˜à¦°à§à¦·à§‡ à¦à¦•à¦¾à¦§à¦¿à¦• à¦¹à¦¤à¦¾à¦¹à¦¤à¥¤ à¦¸à§à¦¥à¦¾à¦¨à§€à¦¯à¦¼à¦°à¦¾ à¦¬à§à¦¯à¦¾à¦°à¦¿à¦•à§‡à¦¡ à¦¦à§‡à¦¯à¦¼à¥¤",
+    "description_en": "Multiple casualties in clashes with police in Mohammadpur. Locals erect barricades.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.prothomalo.com/",
+        "org": "Prothom Alo",
+        "excerpt": "Multiple casualties in clashes with police in Mohammadpur. Locals erect barricades."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "b50a18c954b7af4f13ba693c0f68c5a44d7ac723a79721f860cd9a95b443b66d",
+    "prev_chain_hash": "5aef0ab4c8231b6e40e9529a44530a3dff6932862181926e9df2c738c1a1a913",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  },
+  {
+    "id": "evt-050",
+    "event_date": "2024-08-05",
+    "location": "Dhaka, Bangladesh",
+    "description_bn": "à¦œà¦¨à¦¤à¦¾ à¦œà¦¾à¦¤à§€à¦¯à¦¼ à¦¸à¦‚à¦¸à¦¦ à¦­à¦¬à¦¨à§‡à¦° à¦¦à¦¿à¦•à§‡ à¦à¦—à¦¿à¦¯à¦¼à§‡ à¦¯à¦¾à¦¯à¦¼à¥¤ à¦‡à¦¤à¦¿à¦¹à¦¾à¦¸à§‡à¦° à¦…à¦¨à§à¦¯à¦¤à¦® à¦¬à§ƒà¦¹à¦¤à§à¦¤à¦® à¦—à¦£à¦œà¦®à¦¾à¦¯à¦¼à§‡à¦¤à¥¤",
+    "description_en": "Crowds march towards the National Parliament building. One of the largest public gatherings in history.",
+    "verdict_label": "disputed",
+    "sources": [
+      {
+        "url": "https://www.reuters.com/",
+        "org": "Reuters",
+        "excerpt": "Crowds march towards the National Parliament building. One of the largest public gatherings in history."
+      }
+    ],
+    "entities": [],
+    "related_image_hashes": [],
+    "entry_hash": "5665eec66d789acc81b7b6fa444bb778315fe39c39bad431d15df2aa037f01ce",
+    "prev_chain_hash": "38b3a4ca7f7def5694d52bd8f413bafeacb417ec0bdb7b8b35fcbcf3abd3eb6e",
+    "ots_proof_ref": "D:/july/backend/app/chain/proofs/chain-f319d6c3bbae8b86.ots"
+  }
+]
