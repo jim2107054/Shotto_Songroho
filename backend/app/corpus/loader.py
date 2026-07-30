@@ -1,5 +1,5 @@
 """
-Shotto Songroho - Corpus Loader
+Shotto Songroho - Corpus Loader (UTF-8)
 Loads seed data and image hashes into ChromaDB on startup.
 """
 
