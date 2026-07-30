@@ -76,6 +76,7 @@ async def root():
             "verify": "POST /api/verify",
             "corpus": "GET /api/corpus",
             "health": "GET /api/health",
+            "chain_verify": "GET /api/chain/verify",
         },
     }
 

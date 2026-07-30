@@ -14,12 +14,14 @@ from app.schemas.models import (
     ImageCheckResult,
     PipelineStep,
     SourceCitation,
+    ChainReceipt,
 )
 from app.agents.claim_extractor import extract_claim
 from app.agents.evidence_retriever import retrieve_evidence
 from app.agents.cross_verifier import cross_verify
 from app.agents.image_checker import check_image_reuse
 from app.agents.verdict_agent import produce_verdict
+from app.chain.service import compute_entry_hash, next_chain_hash, verify_stored_chain
 
 logger = logging.getLogger(__name__)
 
@@ -202,7 +204,41 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
             "sources": [],
         }
 
-    # ─── Build Response ───────────────────────────────────────────
+    chain_receipt = None
+    try:
+        stored_chain = verify_stored_chain()
+        verdict_bundle = {
+            "type": "generated_verdict",
+            "claim": claim.model_dump() if claim else {},
+            "verdict": verdict_data.get("verdict"),
+            "confidence": verdict_data.get("confidence"),
+            "summary": verdict_data.get("summary", ""),
+            "sources": [source.model_dump() for source in verdict_data.get("sources", [])],
+            "image_match": image_check_result.model_dump() if image_check_result else None,
+        }
+        entry_hash = compute_entry_hash(verdict_bundle)
+        prev_chain_hash = stored_chain.get("chain_hash", "")
+        chain_hash = next_chain_hash(prev_chain_hash, entry_hash)
+        chain_receipt = ChainReceipt(
+            entry_hash=entry_hash,
+            prev_chain_hash=prev_chain_hash,
+            chain_hash=chain_hash,
+            ots_proof_ref=stored_chain.get("latest_ots_proof", {}).get("proof_path"),
+        )
+        steps.append(PipelineStep(
+            agent="Archival Notarization",
+            status="completed",
+            summary=f"Verdict bundle hashed into chain receipt {entry_hash[:12]}...",
+        ))
+    except Exception as e:
+        logger.error(f"Archival receipt failed: {e}")
+        steps.append(PipelineStep(
+            agent="Archival Notarization",
+            status="failed",
+            summary="Could not create chain receipt for this verdict.",
+        ))
+
+    # Build Response
     return VerifyResponse(
         verdict=verdict_data["verdict"],
         confidence=verdict_data["confidence"],
@@ -211,4 +247,7 @@ async def run_verification_pipeline(request: VerifyRequest) -> VerifyResponse:
         image_match=image_check_result,
         pipeline_steps=steps,
         claim_extracted=claim,
+        chain_receipt=chain_receipt,
     )
+
+

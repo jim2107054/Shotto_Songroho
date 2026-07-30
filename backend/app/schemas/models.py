@@ -87,6 +87,30 @@ class PipelineStep(BaseModel):
 # Response Models
 
 
+class ChainReceipt(BaseModel):
+    """Hash-chain receipt for a corpus entry or generated verdict."""
+    entry_hash: str = ""
+    prev_chain_hash: str = ""
+    chain_hash: str = ""
+    ots_proof_ref: Optional[str] = None
+
+
+class ChainProofStatus(BaseModel):
+    """Latest OpenTimestamps proof status."""
+    status: str = "missing"
+    proof_path: Optional[str] = None
+    detail: str = ""
+
+
+class ChainVerifyResponse(BaseModel):
+    """Response body for /api/chain/verify."""
+    valid: bool = False
+    chain_length: int = 0
+    chain_hash: str = ""
+    errors: List[str] = Field(default_factory=list)
+    latest_ots_proof: ChainProofStatus = Field(default_factory=ChainProofStatus)
+
+
 class VerifyResponse(BaseModel):
     """Response body for the /api/verify endpoint."""
     verdict: Literal["verified", "disputed", "unverifiable", "false"]
@@ -96,6 +120,7 @@ class VerifyResponse(BaseModel):
     image_match: Optional[ImageCheckResult] = None
     pipeline_steps: List[PipelineStep] = Field(default_factory=list)
     claim_extracted: Optional[ExtractedClaim] = None
+    chain_receipt: Optional[ChainReceipt] = None
 
 
 class CorpusEntryResponse(BaseModel):

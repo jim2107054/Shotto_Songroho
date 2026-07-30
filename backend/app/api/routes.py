@@ -15,9 +15,12 @@ from app.schemas.models import (
     CorpusEntryResponse,
     HealthResponse,
     SourceCitation,
+    ChainVerifyResponse,
+    ChainProofStatus,
 )
 from app.agents.pipeline import run_verification_pipeline
 from app.services.vector_store import get_all_corpus_entries, get_corpus_count
+from app.chain.service import verify_stored_chain
 
 logger = logging.getLogger(__name__)
 
@@ -96,6 +99,9 @@ async def search_corpus(
                 ],
                 entities=entry.get("entities", []),
                 related_image_hashes=entry.get("related_image_hashes", []),
+                entry_hash=entry.get("entry_hash"),
+                prev_chain_hash=entry.get("prev_chain_hash"),
+                ots_proof_ref=entry.get("ots_proof_ref"),
             ))
 
         return CorpusSearchResponse(
@@ -108,6 +114,24 @@ async def search_corpus(
             status_code=500,
             detail=f"Corpus search failed: {str(e)}",
         )
+
+
+@router.get("/chain/verify", response_model=ChainVerifyResponse)
+async def verify_chain():
+    """Recompute the stored corpus hash chain and report latest OTS proof status."""
+    result = verify_stored_chain()
+    proof = result.get("latest_ots_proof", {})
+    return ChainVerifyResponse(
+        valid=result.get("valid", False),
+        chain_length=result.get("chain_length", 0),
+        chain_hash=result.get("chain_hash", ""),
+        errors=result.get("errors", []),
+        latest_ots_proof=ChainProofStatus(
+            status=proof.get("status", "missing"),
+            proof_path=proof.get("proof_path"),
+            detail=proof.get("detail", ""),
+        ),
+    )
 
 
 @router.get("/health", response_model=HealthResponse)
