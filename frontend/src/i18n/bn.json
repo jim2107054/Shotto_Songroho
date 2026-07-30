@@ -90,5 +90,8 @@
   "testimony_submit": "পর্যালোচনার জন্য জমা দিন",
   "testimony_submitting": "জমা হচ্ছে...",
   "testimony_queued": "পর্যালোচনার জন্য অপেক্ষমাণ",
-  "testimony_failed": "জমা দেওয়া ব্যর্থ হয়েছে"
+  "testimony_failed": "জমা দেওয়া ব্যর্থ হয়েছে",
+  "pagination_prev": "পূর্ববর্তী",
+  "pagination_next": "পরবর্তী",
+  "pagination_info": "পৃষ্ঠা {page} / {pages} (মোট {count}টি)"
 }

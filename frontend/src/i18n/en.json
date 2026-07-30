@@ -90,5 +90,8 @@
   "testimony_submit": "Submit for Review",
   "testimony_submitting": "Submitting...",
   "testimony_queued": "Queued for review",
-  "testimony_failed": "Submission failed"
+  "testimony_failed": "Submission failed",
+  "pagination_prev": "Prev",
+  "pagination_next": "Next",
+  "pagination_info": "Page {page} of {pages} ({count} total)"
 }
