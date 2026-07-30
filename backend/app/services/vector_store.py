@@ -1,12 +1,13 @@
 """
 Shotto Songroho — Vector Store Service
-ChromaDB wrapper for corpus embedding, retrieval, and search.
+Numpy-based vector store for corpus embedding, retrieval, and search.
+Uses sentence-transformers for multilingual embeddings and numpy cosine similarity.
 """
 
 import logging
+import numpy as np
 from typing import List, Optional, Dict, Any
-import chromadb
-from chromadb.utils import embedding_functions
+from sentence_transformers import SentenceTransformer
 
 from app.config import settings
 from app.corpus.loader import load_seed_data, load_image_hashes, prepare_documents_for_embedding
@@ -14,69 +15,50 @@ from app.corpus.loader import load_seed_data, load_image_hashes, prepare_documen
 logger = logging.getLogger(__name__)
 
 # Module-level state
-_client: Optional[chromadb.ClientAPI] = None
-_collection: Optional[chromadb.Collection] = None
+_model: Optional[SentenceTransformer] = None
+_embeddings: Optional[np.ndarray] = None
+_documents: List[str] = []
+_metadatas: List[Dict[str, Any]] = []
+_doc_ids: List[str] = []
 _corpus_entries: List[Dict[str, Any]] = []
 _image_hashes: List[Dict[str, Any]] = []
 
 
-def get_embedding_function():
-    """Create the sentence-transformer embedding function for multilingual support."""
-    return embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name=settings.EMBEDDING_MODEL,
-    )
-
-
 def initialize_vector_store():
-    """Initialize ChromaDB and load corpus on startup."""
-    global _client, _collection, _corpus_entries, _image_hashes
+    """Initialize the embedding model and load corpus."""
+    global _model, _embeddings, _documents, _metadatas, _doc_ids, _corpus_entries, _image_hashes
 
     logger.info("Initializing vector store...")
 
-    # Create persistent client
-    _client = chromadb.PersistentClient(path=settings.CHROMA_PERSIST_PATH)
+    # Load the multilingual embedding model
+    logger.info(f"Loading embedding model: {settings.EMBEDDING_MODEL}")
+    _model = SentenceTransformer(settings.EMBEDDING_MODEL)
+    logger.info("Embedding model loaded successfully")
 
-    # Create embedding function
-    ef = get_embedding_function()
-
-    # Get or create the collection
-    _collection = _client.get_or_create_collection(
-        name="july_revolution_corpus",
-        embedding_function=ef,
-        metadata={"hnsw:space": "cosine"},
-    )
-
-    # Load corpus
+    # Load corpus data
     _corpus_entries = load_seed_data()
     _image_hashes = load_image_hashes()
 
-    # Check if corpus is already loaded
-    existing_count = _collection.count()
-    expected_count = len(_corpus_entries) * 2  # EN + BN per entry
+    # Prepare documents
+    docs = prepare_documents_for_embedding(_corpus_entries)
+    _doc_ids = docs["ids"]
+    _documents = docs["documents"]
+    _metadatas = docs["metadatas"]
 
-    if existing_count < expected_count:
-        logger.info(f"Loading corpus into ChromaDB ({existing_count} existing, {expected_count} expected)...")
-        # Clear and reload
-        if existing_count > 0:
-            # Get all existing IDs and delete them
-            existing = _collection.get()
-            if existing["ids"]:
-                _collection.delete(ids=existing["ids"])
-
-        # Prepare and add documents
-        docs = prepare_documents_for_embedding(_corpus_entries)
-        if docs["ids"]:
-            # Add in batches to avoid memory issues
-            batch_size = 50
-            for i in range(0, len(docs["ids"]), batch_size):
-                _collection.add(
-                    ids=docs["ids"][i:i + batch_size],
-                    documents=docs["documents"][i:i + batch_size],
-                    metadatas=docs["metadatas"][i:i + batch_size],
-                )
-            logger.info(f"Successfully loaded {len(docs['ids'])} documents into ChromaDB")
+    if _documents:
+        # Generate embeddings for all documents
+        logger.info(f"Generating embeddings for {len(_documents)} documents...")
+        _embeddings = _model.encode(_documents, show_progress_bar=True, convert_to_numpy=True)
+        # Normalize for cosine similarity
+        norms = np.linalg.norm(_embeddings, axis=1, keepdims=True)
+        norms[norms == 0] = 1  # avoid division by zero
+        _embeddings = _embeddings / norms
+        logger.info(f"Embeddings shape: {_embeddings.shape}")
     else:
-        logger.info(f"Corpus already loaded ({existing_count} documents)")
+        _embeddings = np.array([])
+        logger.warning("No documents to embed")
+
+    logger.info(f"Vector store initialized with {len(_documents)} documents from {len(_corpus_entries)} corpus entries")
 
 
 def search_corpus(
@@ -88,83 +70,72 @@ def search_corpus(
     verdict_label: Optional[str] = None,
 ) -> List[Dict[str, Any]]:
     """
-    Search the corpus using vector similarity with optional metadata filters.
+    Search the corpus using cosine similarity.
     Returns list of matched entries with relevance scores.
     """
-    if _collection is None:
+    if _model is None or _embeddings is None or len(_embeddings) == 0:
         logger.error("Vector store not initialized")
         return []
 
-    # Build where clause for metadata filtering
-    where_clauses = []
-    if location:
-        where_clauses.append({"location": {"$contains": location}})
-    if verdict_label:
-        where_clauses.append({"verdict_label": verdict_label})
+    # Encode query
+    query_embedding = _model.encode([query], convert_to_numpy=True)
+    query_norm = np.linalg.norm(query_embedding)
+    if query_norm > 0:
+        query_embedding = query_embedding / query_norm
 
-    where = None
-    if len(where_clauses) == 1:
-        where = where_clauses[0]
-    elif len(where_clauses) > 1:
-        where = {"$and": where_clauses}
+    # Compute cosine similarities
+    similarities = np.dot(_embeddings, query_embedding.T).flatten()
 
-    try:
-        results = _collection.query(
-            query_texts=[query],
-            n_results=n_results,
-            where=where,
-        )
-    except Exception as e:
-        logger.error(f"ChromaDB query failed: {e}")
-        # Retry without filters if filter caused the error
-        try:
-            results = _collection.query(
-                query_texts=[query],
-                n_results=n_results,
-            )
-        except Exception as e2:
-            logger.error(f"ChromaDB query retry failed: {e2}")
-            return []
+    # Get top-k indices sorted by similarity
+    top_indices = np.argsort(similarities)[::-1]
 
-    # Parse results
+    # Filter and build results
     entries = []
-    if results and results["ids"] and results["ids"][0]:
-        for i, doc_id in enumerate(results["ids"][0]):
-            metadata = results["metadatas"][0][i] if results["metadatas"] else {}
-            distance = results["distances"][0][i] if results["distances"] else 1.0
+    seen_ids = set()
 
-            # Convert cosine distance to similarity score (0-1)
-            relevance_score = max(0.0, 1.0 - distance)
+    for idx in top_indices:
+        if len(entries) >= n_results:
+            break
 
-            # Apply date filtering in post-processing (ChromaDB string comparison is limited)
-            event_date = metadata.get("event_date", "")
-            if date_from and event_date and event_date < date_from:
-                continue
-            if date_to and event_date and event_date > date_to:
-                continue
+        metadata = _metadatas[idx]
+        entry_id = metadata.get("entry_id", _doc_ids[idx])
+        relevance_score = float(similarities[idx])
 
-            entries.append({
-                "id": metadata.get("entry_id", doc_id),
-                "description": results["documents"][0][i] if results["documents"] else "",
-                "description_en": metadata.get("description_en", ""),
-                "description_bn": metadata.get("description_bn", ""),
-                "event_date": event_date,
-                "location": metadata.get("location", ""),
-                "verdict_label": metadata.get("verdict_label", ""),
-                "source_url": metadata.get("source_url", ""),
-                "source_org": metadata.get("source_org", ""),
-                "relevance_score": round(relevance_score, 4),
-                "lang": metadata.get("lang", "en"),
-            })
+        # Skip low relevance
+        if relevance_score < 0.05:
+            continue
 
-    # Deduplicate by entry_id (keep highest scoring)
-    seen = {}
-    for entry in entries:
-        eid = entry["id"]
-        if eid not in seen or entry["relevance_score"] > seen[eid]["relevance_score"]:
-            seen[eid] = entry
+        # Apply metadata filters
+        event_date = metadata.get("event_date", "")
+        if date_from and event_date and event_date < date_from:
+            continue
+        if date_to and event_date and event_date > date_to:
+            continue
+        if location and location.lower() not in metadata.get("location", "").lower():
+            continue
+        if verdict_label and metadata.get("verdict_label", "") != verdict_label:
+            continue
 
-    return sorted(seen.values(), key=lambda x: x["relevance_score"], reverse=True)
+        # Deduplicate by entry_id (keep highest score)
+        if entry_id in seen_ids:
+            continue
+        seen_ids.add(entry_id)
+
+        entries.append({
+            "id": entry_id,
+            "description": _documents[idx],
+            "description_en": metadata.get("description_en", ""),
+            "description_bn": metadata.get("description_bn", ""),
+            "event_date": event_date,
+            "location": metadata.get("location", ""),
+            "verdict_label": metadata.get("verdict_label", ""),
+            "source_url": metadata.get("source_url", ""),
+            "source_org": metadata.get("source_org", ""),
+            "relevance_score": round(relevance_score, 4),
+            "lang": metadata.get("lang", "en"),
+        })
+
+    return entries
 
 
 def get_all_corpus_entries(
@@ -192,7 +163,6 @@ def get_all_corpus_entries(
     # No query — return filtered raw entries
     results = []
     for entry in _corpus_entries:
-        # Apply filters
         if date_from and entry.get("event_date", "") < date_from:
             continue
         if date_to and entry.get("event_date", "") > date_to:
@@ -203,7 +173,6 @@ def get_all_corpus_entries(
             continue
 
         results.append(entry)
-
         if len(results) >= limit:
             break
 
