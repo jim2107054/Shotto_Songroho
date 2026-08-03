@@ -1,4 +1,4 @@
-# Shotto Songroho (শত্য সংগ্রহ)
+# Shotto Songroho
 
 Agentic Fact-Verification for July Revolution Claims
 
